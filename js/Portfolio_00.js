@@ -260,7 +260,7 @@ $(function(){
     $(document).mousemove(function(e){ //메인화면 배경이미지 효과
             var moveX = (e.pageX/50)+"%";
             $('.container #main_content_01 .main_bg_img').css({
-                backgroundImage: 'url(../img/main.01.jpg)',
+                backgroundImage: 'url(img/main.01.jpg)',
                 backgroundPositionX: moveX
             });
         });
