@@ -1,0 +1,330 @@
+@charset "utf-8";
+@media all and (max-width:1024px){
+    .header .header_content .logo_box,
+    .subHeader .header_content .logo_box{
+        margin-left: 5%;
+    }
+    .header .header_content .headerMenu_box,
+    .subHeader .header_content .headerMenu_box{
+        margin-right: 5%;
+    }
+    .shortCut_btn{
+        top: 30%;
+        right: 0;
+    }
+    .top_btn{
+        top: 70%;
+        right: 5%;
+    }
+
+
+    .container #main_content_01 .main_bg_img{
+        background-position-x: 40% !important;
+    }
+    .container #main_content_01 .main_bg_img .main_text{
+        padding-top: 300px;
+        margin-left: 5%;
+    }
+    .container #main_content_01 .main_bg_img .main_text h2{
+        font-size: 4vw;
+    }
+    .container #main_content_01 .main_bg_img .bottom_section .github_address{
+        margin-left: 5%;
+    }
+    .container #main_content_01 .main_bg_img .bottom_section .section_btn{
+        margin-right: 5%;
+    }
+
+
+    .container #main_content_02 .aboutMe_section .aboutMe_content{
+        margin-top: 50px;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .text_section{
+        margin-left: 5%;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .text_section .myStory p{
+        font-size: 1.1em;
+        font-size: 1.1rem;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .text_section .info_box h2{
+        font-size: 1.1em;
+        font-size: 1.1rem;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .myImg_section{
+        position: absolute;
+        top: 53%;
+        right: 0;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .myImg_section img{
+        width: 60%;
+    }
+
+
+    .skill_section .skill_content{
+        margin-top: 50px;
+    }
+    .skill_section .skill_content .skill_percent{
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+
+    .container #main_content_04 .contact_section .contact_content{
+        margin-top: 50px;
+        max-width: 500px;
+    }
+    .container #main_content_04 .contact_section .contact_content .content_box{
+        float: none;
+        margin: 0 auto;
+        width: 496px;
+        height: 130px;
+        font-size: 1.3em;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .contact_section .contact_content .phone h3{
+        margin-top: 30px;
+    }
+    .contact_section .contact_content .phone h3 img{
+        left: 105px;
+    }
+    .contact_section .contact_content .email h3{
+        margin-top: 30px;
+    }
+    .contact_section .contact_content .email h3 img{
+        left: 30px;
+    }
+    .container #main_content_04 .contact_section .map_section{
+        float: none;
+        margin: 120px auto 0;
+        height: 300px;
+    }
+    .container #main_content_04 .contact_section .map_section iframe{
+        height: 300px;
+    }
+    .contact_section .contact_content .endMant{
+        top: 180px;
+    }
+
+
+    .container .project_section .project_box{
+        margin-top: 50px;
+    }
+}
+@media all and (max-width:768px){
+    .header_content .headerMenu_box .resume_btn{
+        margin-top: 5px;
+    }
+    .header_content .headerMenu_box .resume_btn a{
+        padding: 3px 7px;
+        font-size: 20px;
+    }
+    .header_content .headerMenu_box .menu_toggle_btn{
+        margin-top: 0;
+    }
+    .header_content .logo_box{
+        margin-top: 15px;
+    }
+    .header_content .logo_box h1 a img{
+        width: 90px;
+    }
+    .top_btn{
+        top: 75%;
+        right: 13%;
+    }
+
+
+    .allMenu_section .menu_section{
+        top: 280px;
+    }
+    .allMenu_section .menu_section .menuList>li{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .allMenu_section .menu_section .menuList>li span{
+        font-size: 1.5em;
+        font-size: 1.5rem;
+    }
+    .allMenu_section .menu_section .menuList .subMenuList>li a{
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+
+
+    .container #main_content_01 .main_bg_img .main_text h2:first-child{
+        margin-top: 40px;
+    }
+    .container #main_content_01 .main_bg_img .main_text h2{
+        margin: 20px 0;
+    }
+    .container #main_content_01 .main_bg_img .bottom_section{
+        bottom: 30px;
+    }
+    .container #main_content_01 .main_bg_img .bottom_section .github_address a{
+        font-size: 20px;
+    }
+    .container #main_content_01 .main_bg_img .bottom_section .github_address a img{
+        width: 40px;
+        margin-top: -12px;
+    }
+    .container #main_content_01 .main_bg_img .bottom_section .github_address a span{
+        margin-left: 8px;
+    }
+    .container #main_content_01 .main_bg_img .bottom_section .section_btn a{
+        font-size: 24px;
+    }
+
+
+    .container #main_content_02 .aboutMe_section .aboutMe_title h2::after{
+        display: none;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content{
+        margin: 20px auto 0;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .text_section{
+        width: 78%;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .text_section .myStory p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .myImg_section{
+        top: 430px;
+        left: 50%;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .text_section .education_btn span{
+        display: none;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .text_section .education_section{
+        position: static;
+        opacity: 1 !important;
+        padding: 0;
+        width: 50%;
+        height: auto;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .text_section .education_section h3{
+        font-size: 0.7em;
+        line-height: 20px;
+    }
+    .container #main_content_02 .aboutMe_section .aboutMe_content .text_section .info_box h2{
+        font-size: 1em;
+        font-size: 1rem;
+        line-height: 26px;
+    }
+
+
+    .container #main_content_03 .skill_section .skill_title h2::after{
+        display: none;
+    }
+    .skill_section .skill_content{
+        margin-top: 20px;
+    }
+    .skill_section .skill_content .skill_percent .skill_box{
+        height: 250px;
+    }
+    .skill_section .skill_content .skill_percent img{
+        width: 40px;
+    }
+    .skill_section .skill_content .skill_percent .psd_section img,
+    .skill_section .skill_content .skill_percent .ai_section img{
+        width: 50px;
+    }
+    .skill_section .skill_content .skill_percent .skill_box .bar_wrap{
+        margin-bottom: 70px;
+    }
+    .skill_section .skill_content .skill_percent .skill_box .skill_bar,
+    .skill_section .skill_content .skill_percent .skill_box .interest_bar{
+        width: 20px;
+    }
+    .skill_section .skill_content .another_section{
+        margin: 0 auto;
+    }
+    .skill_section .skill_content .another_section .another_box{
+        top: 25px;
+    }
+
+
+    .container #main_content_04 .contact_section .contact_title h2::after{
+        display: none;
+    }
+    .container #main_content_04 .contact_section .contact_content{
+        margin-top: 20px;
+    }
+    .container #main_content_04 .contact_section .contact_content .content_box{
+        width: 70%;
+        height: 110px;
+    }
+    .contact_section .contact_content img{
+        display: none;
+    }
+    .contact_section .contact_content .phone h3,
+    .contact_section .contact_content .email h3{
+        margin-left: 0;
+        font-size: 1em;
+        font-size: 1rem;
+        margin-top: 25px;
+    }
+    .contact_section .contact_content .endMant{
+        position: static;
+        width: 70%;
+        margin: 30px auto;
+    }
+    .contact_section .contact_content .endMant h3{
+        font-size: 1em;
+        font-size: 1rem;
+    }
+    .contact_section .contact_content .endMant h3::after{
+        right: 15px;
+        width: 3px;
+    }
+    .container #main_content_04 .contact_section .map_section{
+        width: 70%;
+        margin-top: 30px;
+    }
+    .container #main_content_04 .contact_section .map_section iframe{
+        width: 100%;
+    }
+
+
+    .container .project_section .project_title h2::after{
+        display: none;
+    }
+    .container .project_section .project_box{
+        margin-top: 20px;
+    }
+    .container .project_section .project_box .pbBox{
+        max-width: 768px !important;
+        width: 100% !important;
+        min-width: auto;
+        height: 380px;
+        margin-left: 0;
+    }
+    .container .project_section .project_box .pbBox .project_thumbnail{
+        width: 100%;
+        height: 200px;
+    }
+    .container .project_section .project_box .pbBox .project_info{
+        width: 100%;
+        height: 180px;
+    }
+    .container .project_section .project_box .pbBox .project_info .bottom_sec{
+        width: 90%;
+    }
+    .project_box .review_box .review_txt_box .review_title{
+        margin: 20px 0 15px;
+    }
+    .project_box .review_box .review_txt_box .review_title h2{
+        font-size: 1.3rem;
+        font-size: 1.3em;
+    }
+    .project_box .review_box .review_txt_box .review_txt{
+        width: 90%;
+        height: 240px;
+    }
+    .project_box .review_box .review_txt_box .review_txt p{
+        font-size: 0.9em;
+        font-size: 0.9rem;
+        line-height: 24px;
+    }
+}

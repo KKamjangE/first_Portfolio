@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>PAG_Palette 아트 갤러리</title>
+<link rel="stylesheet" href="../css/PAG_default.css" type="text/css">
+<link rel="stylesheet" href="../css/PAG_main.css" type="text/css">
+<script src="../libs/jquery-3.2.0.min.js" type="text/javascript"></script>
+<script src="../libs/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../libs/jquery.accordionImageMenu.min.js" type="text/javascript"></script>
+<script src="../libs/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="../js/PAG_default.js" type="text/javascript"></script>
+<script src="../js/PAG_main.js" type="text/javascript"></script>
+<script src="../js/PAG_default1100.js" type="text/javascript"></script>
+<style type="text/css">
+</style>    
+</head>
+<body>
+    <div id="wrap">
+        <!-- ---------------------------------- 팝업창 ----------------------------------------- -->
+        <div id="popupBg"></div>
+        <div id="loginBg" class="popPosi">
+            <div id="login" class="nskFont">
+                <div class="loginwBox">
+                    <div id="logo"><h1><a href="PAG_main.html"><img src="../img/logo_icon/logo01_bg.png" alt="팔레트아트갤러리"></a></h1></div>
+                    <ul id="loginMenu">
+                        <a href="#">
+                            <li id="login">로그인</li>
+                        </a>
+                        <a href="#">
+                            <li id="notlogin">비회원 조회</li> 
+                        </a>
+                    </ul>
+                    <label for="id" id="lbId">아이디</label>
+                    <input type="text" id="id" class="inputInfo" placeholder="ID">
+                    <label for="password" id="lbPassword">비밀번호</label>
+                    <input type="password" id="password" class="inputInfo" placeholder="PASSWORD">
+                    <button id="loginBtn">로그인</button>
+                    <label for="chB" id="saveId"><input type="checkbox" id="chB"> 아이디 저장</label>
+                    <ul id="find">
+                        <li><a href="#">아이디 찾기</a></li>
+                        <li><a href="#">비밀번호 찾기</a></li>
+                    </ul>
+                    <div id="anotherLogin">
+                        <a href="#" id="naver" class="another"><img src="../img/logo_icon/naver_icon.png" alt="네이버아이콘">네이버로 로그인</a>
+                        <a href="#" id="google" class="another"><img src="../img/logo_icon/google_icon.png" alt="구글아이콘">구글로 로그인</a>
+                    </div>
+                    <a href="#" id="signUp">회원가입</a>
+                </div> <!--loginwBox-->
+                <a href="#" id="close"><img src="../img/logo_icon/close_icon.png" alt="닫기"></a>
+            </div> <!--login-->
+        </div> <!--loginBg-->
+        <div id="errorPopPosi">
+            <div id="errorPop" class="nskFont">
+                <div id="errorText">
+                    <p>아이디 또는 비밀번호가 올바르지 않습니다.</p>
+                </div>
+                <a href="#" id="okBtn"><h3>확인</h3></a>
+            </div> <!--errorPop-->
+        </div> <!--errorPopPosi-->
+        <!-- ---------------------------------- 팝업창 ----------------------------------------- -->
+        <header class="ngFont">
+            <div id="userArea">
+                <div class="wBox">
+                    <ul id="loginList">
+                        <li class="login"><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul> <!--loginList-->
+                    <div id="logo"><h1><a href="PAG_main.html"><img src="../img/logo_icon/logo01_bg.png" alt="팔레트아트갤러리"></a></h1></div>
+                    <div id="search">
+                        <form action="#" method="post">
+                            <input type="text">
+                            <a href="#"></a>
+                        </form>
+                    </div> <!--search-->
+                </div> <!--wBox-->
+                <div id="login-icon">
+                    <a href="PAG_M_login.html" class="login">
+                        <img src="../img/logo_icon/login_icon.png" alt="">
+                    </a>
+                </div>
+                <span id="menu-toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <div id="mainMenu">
+                    <div class="wBox">
+                        <ul id="menuList">
+                            <li>
+                                <a href="PAG_pallete.html">Palette</a>
+                                <ul class="subMenu">
+                                    <li><a href="PAG_pallete.html">전시관 소개</a></li>
+                                    <li><a href="#">오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="PAG_exhibition.html">Exhibition</a>
+                                <ul class="subMenu">
+                                    <li><a href="PAG_exhibition.html">현재 전시</a></li>
+                                    <li><a href="#">예정 전시</a></li>
+                                    <li><a href="#">지난 전시</a></li>
+                                    <li><a href="#">대관 신청</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="PAG_ticket.html">Ticket</a>
+                                <ul class="subMenu">
+                                    <li><a href="PAG_ticket.html">예약 하기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Program</a>
+                                <ul class="subMenu">
+                                    <li><a href="#">체험 안내</a></li>
+                                    <li><a href="#">체험 예약</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="PAG_news.html">News</a>
+                                <ul class="subMenu">
+                                    <li><a href="PAG_news.html">공지사항</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </li>
+                        </ul> <!--menuList-->
+                    </div> <!--wBox-->
+                    <div id="subMenuBg"></div>
+                </div> <!--mainMenu-->
+            </div> <!--userArea-->
+        </header>
+
+
+        <div id="content" class="nskFont">
+            <div id="mainbanner">
+                <ul class="banner_list">
+                    <li class="bannerSlide BS02">
+                        <a href="#">
+                            <div class="wBox">
+                                <div id="bannerText">
+                                    <h2 id="date">2022. 05. 08 Sun - 2022. 05. 20 Fri</h2>
+                                    <h2 id="enName">Jeong Woo-Jae<br>My Dog Story</h2>
+                                    <h2 id="koName">정우재 - 동물, 영감의 원천이 되다</h2>
+                                </div> <!--bannerText-->
+                            </div> <!--wBox-->
+                        </a>
+                    </li>
+                    <li class="bannerSlide BS04">
+                        <a href="PAG_exhibition.html">
+                            <div class="wBox">
+                                <div id="bannerText">
+                                    <h2 id="date">2022. 07. 08 Fri - 2022. 07. 20 Wed</h2>
+                                    <h2 id="enName">YOSIGO<br>Refreshing Summer Record</h2>
+                                    <h2 id="koName">요시고 - 청량한 여름의 기록</h2>
+                                </div> <!--bannerText-->
+                            </div> <!--wBox-->
+                        </a>
+                    </li>
+                    <li class="bannerSlide BS01">
+                        <a href="#">
+                            <div class="wBox">
+                                <div id="bannerText">
+                                    <h2 id="date">2022. 04. 08 Fri - 2022. 04. 30 Sat</h2>
+                                    <h2 id="enName">Kim So-yeon<br>With Nature</h2>
+                                    <h2 id="koName">김소연 - 화(花)답하다</h2>
+                                </div> <!--bannerText-->
+                            </div> <!--wBox-->
+                        </a>
+                    </li>
+                    <li class="bannerSlide BS03">
+                        <a href="#">
+                            <div class="wBox">
+                                <div id="bannerText">
+                                    <h2 id="date">2022. 06. 08 Wed - 2022. 06. 20 Mon</h2>
+                                    <h2 id="enName">Roy Fox Lichtenstein<br>Finding Andy</h2>
+                                    <h2 id="koName">리히텐슈타인 - 로이 리히텐슈타인 컬렉션 소장품 전시</h2>
+                                </div> <!--bannerText-->
+                            </div> <!--wBox-->
+                        </a>
+                    </li>
+
+                </ul>
+                <div id="slideBtnBox">
+                    <ul id="slideBtn">
+                        <li class="active"><a></a></li>
+                        <li><a></a></li>
+                        <li><a></a></li>
+                        <li><a></a></li>
+                    </ul> <!--slideBtn-->
+                </div> <!--slideBtnBox-->
+            </div> <!--mainbanner-->
+            
+
+            <div id="exhibition">
+                <div class="wBox">
+                    <h2>Exhibition</h2>
+                    <ul id="artPoster">
+                        <li class="poster01 poster">
+                            <a href="#">
+                                <img src="../img/main/poster01.png" alt="poster">
+                                <div id="posterText">
+                                    <h3>동물, 영감의 원천이 되다</h3>
+                                    <p class="name">정우재 작가 개인전</p>
+                                    <p>Jeong, Woo Jae</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="poster02 poster">
+                            <a href="PAG_exhibition.html">
+                                <img src="../img/main/poster02.png" alt="poster">
+                                <div id="posterText">
+                                    <h3>청량한 여름의 기록</h3>
+                                    <p class="name">요시고 작가 사진전</p>
+                                    <p>YOSIGO</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="poster03 poster">
+                            <a href="#">
+                                <img src="../img/main/poster03.png" alt="poster">
+                                <div id="posterText">
+                                    <h3>화(花)답하다</h3>
+                                    <p class="name">김소연 작가 개인전</p>
+                                    <p>Kim, So yeon</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="poster04 poster">
+                            <a href="#">
+                                <img src="../img/main/poster04.png" alt="poster">
+                                <div id="posterText">
+                                    <h3>Roy Fox Lichtenstein</h3>
+                                    <p class="name">로이 리히텐슈타인 컬렉션 소장품 전시</p>
+                                    <p>Lichtenstein</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul> <!--artPoster-->
+                </div> <!--wBox-->
+            </div> <!--exhibition-->
+
+
+            <div id="artist">
+                <div id="bg01"></div>
+                <div id="bg02"></div>
+                <div id="bg03"></div>
+                <h2>Artist</h2>
+                <div id="artistInfo">
+                    <div class="wBox">
+                        <div class="artistBox aB01">
+                            <a href="#">
+                                <div id="more">
+                                    <h3>보러가기</h3>
+                                </div>
+                            </a>
+                            <div class="infoBox iB01">
+                                <h3>Shimmer and Glow</h3>
+                                <h4>정우재(Jeong WooJea)</h4>
+                                <p>판타지는 현실의 결핍에서 시작한다. 작품을 통해 부정적<br>
+                                    결핍을 해소하고 자신을 돌아볼 수 있는 기회가 되길 희망한다.</p>
+                                </div>
+                            </div> <!--aB01-->
+                            <div class="artistBox aB02">
+                                <a href="#">
+                                    <div id="more">
+                                        <h3>보러가기</h3>
+                                    </div>
+                                </a>
+                            <div class="infoBox iB02">
+                                <h3>청량한 여름의 기록</h3>
+                                <h4>요시고 (Yosigo)</h4>
+                                <p>스페인 바르셀로나 기반으로 활동하는 사진가 겸 디자이너. 사진의 구도나 편집 방식에<br>
+                                    그래픽 디자인 요소를 접목시켜 구성, 색조의 미학이 드러난 사진 작품을 보여준다. </p>
+                            </div>
+                        </div> <!--aB02-->
+                        <div class="artistBox aB03">
+                            <a href="#">
+                                <div id="more">
+                                    <h3>보러가기</h3>
+                                </div>
+                            </a>
+                            <div class="infoBox iB03">
+                                <h3>with nature</h3>
+                                <h4>김소연(Kim Soyeon)</h4>
+                                <p>김소연 작가는 "자연과 사랑 그리고 삶을 묶어 표현하면서 경험과 성찰을 통해<br>
+                                    단순한 재현과 모방이 아닌 생명력을 갖는 또다른 존재의 표현을 추구한다"고 말했다. </p>
+                            </div>
+                        </div> <!--aB03-->
+                        <div class="artistBox aB04">
+                            <a href="#">
+                                <div id="more">
+                                    <h3>보러가기</h3>
+                                </div>
+                            </a>
+                            <div class="infoBox iB04">
+                                <h3>행복한 눈물</h3>
+                                <h4>로이 리히텐슈타인(Roy Lichtenstein)</h4>
+                                <p>리히텐슈타인은 "오늘날 예술은 우리 주위에 있다"고 선언했었다. 매스미디어를<br>
+                                    미국적인 매스미디어 방법으로 담아냄으로써 미국과 미국인의 전형을 보여주었다.</p>
+                            </div>
+                        </div> <!--aB04-->
+                    </div> <!--wBox-->
+                </div> <!--artistInfo-->
+            </div> <!--artist-->
+            <div id="event">
+                <a href="#">
+                    <div class="banner"></div>
+                </a>
+            </div> <!--event-->
+            <div id="rental">
+                <a href="#">
+                    <img src="../img/main/rental_banner01.jpg" alt="">
+                </a>
+            </div> <!--rental-->
+        </div> <!--content-->
+
+
+        <footer class="ngFont">
+            <div class="wBox">
+                <div id="logo"><a href="PAG_main.html"><img src="../img/logo_icon/logo02_white.png" alt="팔레트아트갤러리"></a></div>
+                <ul id="footerMenu">
+                    <li><a href="#">기업소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보보호정책</a></li>
+                    <li><a href="PAG_news.html">공지사항</a></li>
+                    <li><a href="#">대관신청</a></li>
+                </ul> <!--menuList-->
+                <div id="media-service">
+                    <p><span>고객센터</span> Tel : 1234-5678<br>
+                    평일 09:00~18:00(주말, 공휴일 휴무)</p>
+                </div> <!--media-service-->
+                <div id="info">
+                    <p>기업명 : (주)Palette 대표이사 : 김보라 사업장 소재지 : 서울특별시 영등포구 여의대로 108<br>
+                       사업자 등록번호 : 123-45-67891 갤러리 소재지 : 서울특별시 종로구 세종로 세종대로 172</p>
+                </div> <!--info-->
+                <div id="snsIcon">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../img/logo_icon/instar.png" alt="인스타그램"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../img/logo_icon/youtube.png" alt="유튜브"></a>
+                </div> <!--snsIcon-->
+                <div id="service">
+                    <p><span>고객센터</span><br>
+                       문의 전화번호 : 1234-5678<br>
+                       고객센터 업무시간 : 평일 09:00~18:00(주말, 공휴일 휴무)</p>
+                </div> <!--service-->
+                <div id="copyright">
+                    <p>Copyright © Palette. All Rights Reserved.</p>
+                </div> <!--copyright-->
+            </div> <!--wBox-->
+        </footer>
+    </div> <!--wrap-->
+</body>
+</html>

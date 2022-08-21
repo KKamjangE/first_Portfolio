@@ -1,0 +1,392 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: #000;}
+input:focus{outline: none;}
+img{max-width: 100%;}
+.font{
+    font-family: 'NanumSquare', Arial, Helvetica, sans-serif;
+}
+.textselect:hover{
+    text-decoration: underline;
+}
+.wBox{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+div#topbar{
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+}
+header div#userArea{
+    height: 135px;
+}
+header ul#loginList{
+    text-align: right;
+    height: 0;
+}
+header ul#loginList li{
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 14px;
+    padding: 0 5px;
+    top: 10px;
+}
+header ul#loginList li:not(:first-child):after{
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: #333;
+    content: "";
+    left: -10px;
+    top: 1px;
+}
+header div#logo{
+    margin-left: 30px;
+    margin-top: 12px;
+}
+header div#logo a{
+    display: block;
+    width: 121px;
+    height: 111px;
+}
+header div#search{
+    width: 500px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #c8c8c8;
+    margin: 0 auto;
+    margin-top: -57px;
+}
+header div#search button{
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icon/search.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #c8c8c8;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 16px;
+    margin-top: 10px;
+}
+header div#search input{
+    width: 440px;
+    height: 30px;
+    background-color: #c8c8c8;
+    border: none;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-top: 5px;
+}
+header #rank-sec{
+    float: right;
+    width: 100px;
+    height: 20px;
+    margin-right: 190px;
+    margin-top: -28px;
+    cursor: pointer;
+    font-size: 14px;
+}
+header #rank-sec p{
+    margin-left: 12px;
+    margin-top: 3px;
+}
+header div#ranking{
+    display: none;
+    position: relative;
+    float: right;
+    margin-right: 300px;
+    margin-top: -8px;
+}
+header div#ranking ul{
+    position: absolute;
+    width: 100px;
+    height: 260px;
+    background-color: #fff;
+    z-index: 130;
+    left: 10px;
+}
+header div#ranking li{
+    padding: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+header div#ranking li:first-child{
+    margin-top: 10px;
+}
+header ul#rankList li:first-child{
+    color: #d7dc44;
+}
+header div#mainMenu{
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 3px solid #6b8025;
+}
+header ul#menuList{
+    height: 50px;
+}
+header ul#menuList li{
+    padding: 2px 0;
+}
+#mainMenu{
+    position: relative;
+}
+#mainMenu #category{
+    float: left;
+    margin: 14px 77px 0;
+    cursor: pointer;
+}
+#mainMenu #category span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+}
+#mainMenu #category span:nth-child(2){
+    margin: 7px 0;
+}
+#mainMenu #menuList>li{
+    width: 184px;
+    text-align: center;
+    float: left;
+    margin-top: 13px;
+    font-size: 20px;
+    font-weight: 800;
+}
+#mainMenu ul.subMenu{
+    margin-top: 15px;
+    background-color: #fff;
+    display: none;
+}
+#mainMenu ul.subMenu li{
+    position: relative;
+    z-index: 110;
+    padding: 14px 0;
+}
+#mainMenu ul.subMenu li:first-child{
+    padding-top: 17px;
+}
+#categoryBox{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    background-color: #fff;
+    top: 53px;
+    left: 0;
+    z-index: 101;
+}
+#categoryBg{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 3000px;
+    background-color: rgba(0, 0, 0, .5);
+    top: 100px;
+    left: 0;
+    z-index: 100;
+}
+#mainMenu #menuList li:hover>a{
+    color: #6b8025;
+}
+
+/* ----------------------------------------------------------------------- */
+
+footer{
+    background-color: #333;
+    height: 313px;
+}
+footer div#infoBox{
+    float: left;
+    color: #fff;
+    margin-top: 37px;
+}
+footer ul#footerMenuList li{
+    position: relative;
+    float: left;
+    margin-right: 16px;
+}
+footer ul#footerMenuList li:not(:first-child):after{
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: #fff;
+    content: "";
+    left: -8px;
+    top: 4px;
+}
+footer ul#footerMenuList li a{
+    color: #fff;
+    font-size: 14px;
+}
+footer ul#footerMenuList span{
+    color: #d7dc44;
+}
+footer #infoBox h2{
+    font-size: 20px;
+    padding: 40px 20px 20px 0;
+}
+footer div#info{
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+}
+footer div#copyright{
+    color: rgba(255, 255, 255, .5);
+    font-size: 12px;
+    padding-top: 90px;
+}
+footer div#serviceBox{
+    padding-top: 40px;
+}
+footer div#serviceBox{
+    margin-left: 550px;
+    color: #fff;
+}
+footer ul#serviceMenu{
+    float: left;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+footer ul#serviceMenu li{
+    position: relative;
+    display: inline-block;
+}
+footer ul#serviceMenu li:last-child{
+    margin-left: 20px;
+}
+footer ul#serviceMenu li a{
+    color: #fff;
+    font-size: 14px;
+}
+footer ul#serviceMenu li:last-child:after{
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: #fff;
+    left: -12px;
+    top: 3px;
+    content: "";
+}
+footer div#serviceBox h2{
+    float: left;
+    font-size: 20px;
+    margin-top: 36px;
+}
+footer div#serviceNum{
+    font-size: 30px;
+    margin-top: 75px;
+    font-weight: bold;
+    color: #d7dc44;
+}
+footer div#serviceTime{
+    margin-left: 180px;
+    margin-top: -35px;
+    text-decoration-line: underline;
+}
+footer div#icon{
+    float: right;
+}
+footer div#logo{
+    float: right;
+    margin-top: -110px;
+}
+footer div#logo a{
+    display: block;
+    width: 121px;
+    height: 111px;
+}
+footer div#sns{
+    margin-top: 20px;
+}
+footer div#sns a{
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+footer div#sns a:nth-child(3){
+    margin-right: 0;
+}
+
+/* ----------------------------------------------------------------------- */
+
+#userBox{
+    display: none;
+    /* 사용자 장바구니 스위치 */
+    position: absolute;
+    right: 80px;
+    top: 1020px;
+    text-align: center;
+}
+#userBox #topArea{
+    height: 30px;
+    border: 1px solid #000;
+    border-bottom: none;
+}
+#userBox #bottomArea{
+    width: 170px;
+    height: 30px;
+    border: 1px solid #000;
+    border-top: none;
+    margin-top: 20px;
+}
+#userBox h3{
+    font-size: 20px;
+    padding: 10px;
+}
+#userBox #infotext p{
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+#userBox #infotext p span{
+    font-size: 16px;
+    font-weight: normal;
+}
+#userBox #likeBtn img{
+    width: 26px;
+    height: 24px;
+    padding-top: 6px;
+}
+#userBox #topBtn img{
+    width: 10px;
+    height: 20px;
+    padding-top: 8px;
+}
+#userBox .Btn{
+    height: 35px;
+    border: 1px solid #000;
+    margin: 7px 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+#userBox .Btn p{
+    display: inline-block;
+    vertical-align: middle;
+}
+#userBox #shoppingBagBtn #count{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: #6b8025;
+    color: #fff;
+    font-size: 16px;
+}
+#userBox #likeBtn p{
+    vertical-align: 4px;
+}
+#userBox #topBtn{
+    background-color: #333;
+    color: #fff;
+}
+#userBox #topBtn p{
+    vertical-align: 4px;
+}

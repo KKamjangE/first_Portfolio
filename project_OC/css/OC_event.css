@@ -1,0 +1,70 @@
+@charset "utf-8";
+#userBox{
+    display: none;
+}
+#event-section{}
+#event-section .wBox{}
+#event-section h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+#event-section #event-sec{}
+#event-section #event-sec #tabMenu{
+    height: 50px;
+    margin-bottom: 100px;
+}
+#event-section #event-sec #tabMenu a{
+    display: block;
+    float: left;
+    width: 550px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #6b8025;
+    box-sizing: border-box;
+}
+#event-section #event-sec #tabMenu a.eventTab{
+    border-bottom: none;
+}
+#event-section #event-sec #tabMenu a.notiTab{
+    border-left: none;
+    border-top: 2px solid #f0f0f0;
+    border-right: 2px solid #f0f0f0;
+}
+#event-section #event-sec #tabMenu a p{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 13px;
+}
+#event-section #event-sec #eventList{
+    height: 780px;
+    margin-bottom: 194px;
+}
+#event-section #event-sec #eventList .eventBox{
+    width: 500px;
+    height: 390px;
+}
+#event-section #event-sec #eventList .eventBox img{}
+#event-section #event-sec #eventList .eventBox p{
+    font-size: 12px;
+    font-weight: 700;
+    margin: 7px 0;
+}
+#event-section #event-sec #eventList .eventBox h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+#event-section #event-sec #eventList .EB01{
+    float: left;
+}
+#event-section #event-sec #eventList .EB02{
+    float: right;
+}
+#event-section #event-sec #eventList .EB03{
+    float: left;
+}
+#event-section #event-sec #eventList .EB04{
+    float: right;
+}

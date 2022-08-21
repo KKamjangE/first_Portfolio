@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>나만의 셰프, Only Chef</title>
+<link rel="stylesheet" href="../css/OC_default.css" type="text/css">
+<link rel="stylesheet" href="../css/OC_login.css" type="text/css">
+<script type="text/javascript" src="../libs/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../libs/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../libs/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../libs/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="../js/OC_default.js"></script>
+<script type="text/javascript" src="#"></script>
+</head>
+<body>
+    <div id="wrap" class="font">
+        <div id="topbar"></div>
+        <aside id="userBox">
+            <div id="topArea"></div>
+            <h3>최근 본 메뉴</h3>
+            <a href="#" class="textselect">
+                <img src="../img/main/product/장바구니_소고기해장국.png" alt="소고기해장국">
+                <div id="infotext">
+                    <p><span>국산 우거지의 깊은 맛</span><br>소고기 해장국</p>
+                </div>
+            </a>
+            <div id="bottomArea"></div>
+            <a href="#">
+                <div id="shoppingBagBtn" class="Btn">
+                    <p>장바구니</p>
+                    <span id="count"><p>0</p></span>
+                </div>
+            </a>
+            <a href="#">
+                <div id="likeBtn" class="Btn">
+                    <p>좋아요</p>
+                    <img src="../img/icon/Like_icon.png" alt="좋아요">
+                </div>
+            </a>
+            <a href="#">
+                <div id="topBtn" class="Btn">
+                    <p>Top</p>
+                    <img src="../img/icon/top_icon.png" alt="맨위로가기">
+                </div>
+            </a>
+        </aside> <!--userBox-->
+        <header>
+            <div id="userArea">
+                <div class="wBox">
+                    <ul id="loginList">
+                        <li><a href="OC_login.html">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">쿠폰</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul> <!--loginList-->
+                    <div id="logo"><h1><a href="OC_main.html"><img src="../img/icon/Logo_1.png" alt="Only Chef"></a></h1></div>
+                    <div id="search">
+                        <form action="#" method="post">
+                            <input type="text">
+                            <button id="search_icon"></button>
+                        </form>
+                    </div>
+                    <div id="rank-section">
+                        <div id="rank-sec">
+                            <p>1. 설 선물</p>
+                        </div>
+                        <div id="ranking">
+                            <ul id="rankList">
+                                <li>1. 설 선물</li>
+                                <li>2. 선물세트</li>
+                                <li>3. 소고기</li>
+                                <li>4. 모둠전</li>
+                                <li>5. 잡채</li>
+                                <li>6. 쌀</li>
+                                <li>7. 식단</li>
+                                <li>8. 불고기</li>
+                                <li>9. 갈비</li>
+                                <li>10. 감바스</li>
+                            </ul> <!--rankList-->
+                        </div> <!--ranking-->
+                    </div>
+                </div> <!--wBox-->
+            </div> <!--userArea-->
+            <div id="mainMenu">
+                <div class="wBox">
+                    <a href="OC_login.html" class="user_icon"><img src="../img/icon/user_icon.png" alt="마이페이지"></a>
+                    <div id="category">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="menuList">
+                        <li class="menuselect1"><a href="OC_info.html">셰프 소개</a>
+                            <ul class="subMenu">
+                                <li><a href="OC_info.html">기업 소개</a></li>
+                            </ul>
+                        </li>
+                        <li class="menuselect2"><a href="OC_product.html">셰프 메뉴</a>
+                            <ul class="subMenu subMenuOpen">
+                                <li><a href="OC_product.html">신규 메뉴</a></li>
+                                <li><a href="#">베스트 메뉴</a></li>
+                                <li><a href="#">한식 메뉴</a></li>
+                                <li><a href="#">일식 메뉴</a></li>
+                                <li><a href="#">양식 메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li class="menuselect3"><a href="OC_diet.html">식단 구독</a>
+                            <ul class="subMenu subMenuOpen">
+                                <li><a href="#">식단 신청</a></li>
+                                <li><a href="#">다이어트 식단</a></li>
+                                <li><a href="#">간편 식단</a></li>
+                                <li><a href="#">건강 식단</a></li>
+                            </ul>
+                        </li>
+                        <li class="menuselect4"><a href="#">브랜드 몰</a>
+                            <ul class="subMenu subMenuOpen">
+                                <li><a href="#">이마트몰</a></li>
+                                <li><a href="#">신세계몰</a></li>
+                                <li><a href="#">현대특선</a></li>
+                            </ul>
+                        </li>
+                        <li class="menuselect5"><a href="OC_event.html">EVENT</a>
+                            <ul class="subMenu subMenuOpen">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="OC_event.html">EVENT</a></li>
+                            </ul>
+                        </li>
+                    </ul> <!--menuList-->
+                </div> <!--wBox-->
+                <div id="categoryBg"></div>
+                <div id="categoryBox"></div>
+            </div> <!--mainMenu-->
+        </header> <!--header-->
+
+        
+        <div id="content">
+            <div id="login-section">
+                <div class="loginwBox">
+                    <h2>Only Chef</h2>
+                    <div id="login-sec">
+                        <div id="tabMenu">
+                            <a href="#" class="login-tabBtn"><p>로그인</p></a>
+                            <a href="#" class="nonmember-tabBtn"><p>비회원 주문조회</p></a>
+                        </div> <!--tabMenu-->
+                        <div id="inputBox">
+                            <input type="text" placeholder="아이디" autofocus name="ID" class="inputId">
+                        </div>
+                        <div id="inputBox">
+                            <input type="password" placeholder="비밀번호" autofocus name="Password">
+                        </div>
+                        <div id="userService">
+                            <label for="ID-save"><input type="checkbox" name="ID-save" id="ID-save"><p>아이디 저장</p></label>
+                            <ul>
+                                <li><a href="#">아이디 찾기</a></li>
+                                <li><a href="#">비밀번호 찾기</a></li>
+                            </ul>
+                        </div> <!--userService-->
+                        <button class="loginBtn">로그인</button>
+                    </div> <!--login-sec-->
+                    <div id="apiLogin">
+                        <a href="#"><img src="../img/icon/api_icon/naver_icon.png" alt="naverLoing"></a>
+                        <a href="#"><img src="../img/icon/api_icon/kakao_icon.png" alt="kakaoLoing"></a>
+                        <a href="#"><img src="../img/icon/api_icon/google_icon.png" alt="googleLoing"></a>
+                    </div> <!--apiLogin-->
+                    <div id="member-sec">
+                        <div id="infoText">
+                            <h3>Only Chef 회원이 아니신가요?</h3>
+                            <p>
+                                Only Chef 회원으로 가입하시면 Only Chef의 다양한 서비스<br>
+                                (혜택, 이벤트, 할인)를 이용하실 수 있습니다.
+                            </p>
+                        </div>
+                        <a href="#"><p>회원가입하기</p></a>
+                    </div> <!--member-sec-->
+                </div> <!--loginwBox-->
+            </div> <!--login-section-->
+        </div> <!--content-->
+
+
+        <footer>
+            <div class="wBox">
+                <div id="infoBox">
+                    <ul id="footerMenuList">
+                        <li><a href="#" class="textselect">회사소개</a></li>
+                        <li><a href="#" class="textselect">이용약관</a></li>
+                        <li><a href="#" class="textselect"><span>개인정보처리방침</span></a></li>
+                        <li><a href="#" class="textselect">공지사항</a></li>
+                        <li><a href="#" class="textselect">광고/입점문의</a></li>
+                    </ul> <!--footerMenuList-->
+                    <h2>(주)온리셰프</h2>
+                    <div id="info">
+                        대표이사 : 안제민 사업장 소재지 : 경기도 의정부시 신흥로 258 25<br>
+                        사업자 등록번호 : 123-45-67891 통신판매업신고 : 2022-서울송파-0123<br>
+                        개인정보보호책임자 : 안제민 개인정보 관리 e-mail : ajm980718@gmail.com
+                    </div>
+                    <div id="copyright">
+                        Copyright © Only Chef. All Rights Reserved.
+                    </div>
+                </div>
+                <div id="serviceBox">
+                    <h2>고객센터</h2>
+                    <ul id="serviceMenu">
+                        <li><a href="#" class="textselect">[ FAQ</a></li>
+                        <li><a href="#" class="textselect">1:1문의하기 ]</a></li>
+                    </ul>
+                    <div id="serviceNum">1234-5678</div>
+                    <div id="serviceTime">
+                        평일 9:00~18:00(주말 휴무)<br>
+                        공휴일 12:00~18:00
+                    </div>
+                </div> <!--serviceBox-->
+                <div id="icon">
+                    <div id="logo"><h1><a href="OC_main.html"><img src="../img/icon/Logo_1.png" alt="Only Chef"></a></h1></div>
+                    <div id="sns">
+                        <a href="#"><img src="../img/icon/instar.png" alt="instar"></a>
+                        <a href="#"><img src="../img/icon/youtube.png" alt="youtube"></a>
+                        <a href="#"><img src="../img/icon/kakao.png" alt="kakao"></a>
+                    </div>
+                </div> <!--icon-->
+            </div> <!--wBox-->
+        </footer> <!--footer-->
+    </div> <!--wrap-->
+</body>
+</html>

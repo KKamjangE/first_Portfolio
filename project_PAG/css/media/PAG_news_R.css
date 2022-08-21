@@ -1,0 +1,157 @@
+@charset "utf-8";
+@media all and (max-width: 1100px){
+    div#newTop{
+        position: relative;
+    }
+    div#newTop>p.news{
+        position: absolute;
+        top: 100px;
+        padding: 0;
+    }
+    div#newTop>p.newsKo{
+        padding-top: 200px;
+    }
+
+
+    div#newsSearch{
+        width: 90%;
+    }
+    div#newsSearch>select{
+        margin-left: 100px;
+        margin-left: 10%;
+    }
+    div#newsSearch input.search{
+        width: 48%;
+        margin-left: 250px;
+        margin-left: 25%;
+    }
+    div#newsSearch input.button{
+        margin-left: 750px;
+        margin-left: 75%;
+    }
+
+    /* ---------------------------------------------- */
+
+
+    div#newsText{
+        width: 90%;
+        box-sizing: border-box;
+    }
+    div#newsText div[class]{
+        width: 100%;
+        margin: 0 auto;
+    }
+    div#newsText p[class^=number]{
+        width: 5%;
+        margin-left: 20px;
+        margin-left: 2%;
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+    div#newsText p[class^=text]{
+        width: 48%;
+        margin-left: 120px;
+        margin-left: 12%;
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+    div#newsText p[class^=date]{
+        width: 10%;
+        margin-left: 200px;
+        margin-left: 20%;
+        font-size: 1em;
+        font-size: 1rem;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div#nextBar{
+        margin-left: 40%;
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media all and (max-width: 700px){
+    div#newTop>p.news{
+        font-size: 3em;
+        font-size: 3rem;
+    }
+    div#newTop>p.newsKo{
+        padding-top: 180px;
+        font-size: 2em;
+        font-size: 2rem;
+    }
+    div#newsMenu{
+        max-width: 700px;
+    }
+    div#newsMenu p{
+        width: 130px;
+        margin:0 auto;
+        margin-top: 50px;
+        font-size: 1.3em;
+        font-size: 1.3rem;
+    }
+    div#newsMenu p.smallNews{
+        margin-left: 50px;
+    }
+    div#newsMenu p.event{
+        margin-left: 100px;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div#newsSearch>select{
+        width: 15%;
+        font-size: 0.8em;
+        font-size: 0.8rem;
+    }
+    div#newsSearch input.search{
+        width: 45%;
+        margin-left: 28%;
+    }
+    div#newsSearch input.button{
+        width: 10%;
+        font-size: 0.8em;
+        font-size: 0.8rem;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div#newsText p[class^=number]{
+        margin-left: 5%;
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+    div#newsText p[class^=text]{
+        width: 50%;
+        margin-left: 10%;
+        font-size: 1em;
+        font-size: 1rem;
+    }
+    div#newsText p[class^=date]{
+        width: 100px;
+        width: 15%;
+        font-size: 1em;
+        font-size: 1rem;
+        margin-left: 10%;
+        text-align: left;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div#nextBar{
+        font-size: 1em;
+        margin-left: 35%;
+    }
+}

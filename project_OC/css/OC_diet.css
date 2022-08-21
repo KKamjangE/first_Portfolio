@@ -1,0 +1,66 @@
+@charset "utf-8";
+#userBox{
+    display: none;
+}
+.imgBox{
+    border-radius: 30px;
+}
+#diet-section{}
+#diet-section .wBox{}
+#diet-section h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 100px 0 80px;
+}
+#diet-section #dietList{
+    height: 1400px;
+    margin-bottom: 194px;
+}
+#diet-section #dietList .dietBox{
+    width: 500px;
+    height: 500px;
+}
+#diet-section #dietList .dietBox img{
+    border-radius: 20px;
+}
+#diet-section #dietList .dietBox p{
+    margin-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#diet-section #dietList .dietBox h3{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 800;
+}
+#diet-section #dietList .dietBox #dietBtn{
+    float: right;
+    margin-top: 5px;
+}
+#diet-section #dietList .dietBox #dietBtn a{
+    font-size: 20px;
+    background-color: #d7dc44;
+    color: #000;
+    padding: 9px 14px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#diet-section #dietList .dietBox #dietBtn a:hover{
+    background-color: #6b8025;
+    color: #fff;
+}
+#diet-section #dietList .DB01{
+    float: left;
+}
+#diet-section #dietList .DB02{
+    float: right;
+}
+#diet-section #dietList .DB03{
+    float: left;
+}
+#diet-section #dietList .DB04{
+    float: right;
+}
+#diet-section #dietList .DB05{
+    float: left;
+}

@@ -1,0 +1,252 @@
+@charset "utf-8";
+@media all and (max-width: 1100px){
+    div#ticketTop{
+        position: relative;
+    }
+    div#ticketTop>p.ticket{
+        position: absolute;
+        top: 100px;
+        padding: 0;
+    }
+    div#ticketTop>p.ticketKo{
+        padding-top: 200px;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div#ticketPoster{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    div#ticketPoster p{
+        width: 500px;
+        width: 50%;
+        margin-left: 300px;
+        margin-left: 27.27272727272727%;
+    }
+    div#ticketPoster img.left{
+        margin-left: 150px;
+        margin-left: 15%;
+    }
+    div#ticketPoster img.right{
+        margin-left: 590px;
+        margin-left: 59%;
+    }
+    div#ticketPoster img.poster{
+        width: 500px;
+        width: 50%;
+    }
+
+    /* ---------------------------------------------- */
+
+
+    div#ticket{
+        width: 90%;
+    }
+    div#ticket div.ticketDate{
+        position: static;
+        width: 50%;
+        height: 450px;
+    }
+    div#ticket div.ticketDate p[class^=date]{
+        width: 420px;
+        width: 85%;
+        font-size: 1.0em;
+        font-size: 1.0rem;
+        margin-top: 5px;
+        margin-left: 5.952380952380952%;
+        margin-right: 0;
+        padding-top: 20px;
+    }
+    div#ticket div.ticketDate p.date4{
+        width: 350px;
+        padding-top: 0;
+    }
+    div#ticket div.ticketDate p.date6{
+        width: 350px;
+        padding-top: 0;
+    }
+    div#ticket div.ticketDay{
+        width: 48%;
+        height: 450px;
+        margin-left: 52%;
+        margin-top: -450px;
+    }
+    div#ticket div.ticketDay p{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.4em;
+        font-size: 1.4rem;
+    }
+    div#ticket div.ticketDay #calendar{
+        width: 100%;
+        height: 400px;
+        margin-top: 10px;
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+    div#ticket div.ticketDay #calendar td[class]{
+        font-size: 0.8em;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div.ticketName{
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    /* ---------------------------------------------- */
+
+
+    div.ticketCare{
+        height: 320px;
+        margin-top: 20px;
+    }
+    div.ticketCare p.care{
+        margin: 3% 0 0 3.5%;
+    }
+    div.ticketCare p.careContent{
+        margin-left: 3%;
+        margin-top: 2%;
+        font-size: 1.2em;
+    }
+    div#ticket input{
+        margin-top: 50px;
+        margin-left: 45%;
+    }
+    footer{
+        margin-top: 150px;
+    }
+
+}
+@media all and (max-width: 700px){
+    div#ticketTop>p.ticket{
+        font-size: 3em;
+        font-size: 3rem;
+    }
+    div#ticketTop>p.ticketKo{
+        padding-top: 180px;
+        font-size: 2em;
+        font-size: 2rem;
+    }
+
+    
+    /* ---------------------------------------------- */
+
+
+    div#ticketPoster{
+        width: 80%;
+    }
+    div#ticketPoster p{
+        width: 70%;
+        height: auto;
+        margin-top: 0;
+        margin-left: 16%;
+        font-size: 1.8em;
+        font-size: 1.8rem;
+    }
+    div#ticketPoster img.left{
+        width: 50px;
+        width: 8%;
+        margin-left: 5%;
+    }
+    div#ticketPoster img.right{
+        width: 50px;
+        width: 8%;
+        margin-left: 73%;
+        margin-top: 200px;
+        margin-top: 38%;
+    }
+    div#ticketPoster img.poster{
+        width: 70%;
+        margin-left: 16%;
+        margin-top: -240px;
+        margin-top: -45%;
+    }
+
+    /* ---------------------------------------------- */
+
+
+    div#ticket{
+        width: 90%;
+    }
+    div#ticket div.ticketDate{
+        width: 100%;
+        height: auto;
+    }
+    div#ticket div.ticketDate p[class^=date]{
+        margin-top: 0;
+        padding-top:10px;
+        text-align: left;
+        font-size: 1em;
+        font-size: 1rem;
+    }
+    div#ticket div.ticketDate p.date2{
+        padding-top: 30px;
+    }
+    div#ticket div.ticketDate p.date3{
+        padding-top: 30px;
+    }
+    div#ticket div.ticketDate p.date4{
+        padding-top: 0;
+        padding-left: 50px;
+        text-align: left;
+    }
+    div#ticket div.ticketDate p.date5{
+        padding-top: 30px;
+    }
+    div#ticket div.ticketDate p.date6{
+        padding-top: 0;
+        padding-bottom: 30px;
+        padding-left: 80px;
+        text-align: left;
+    }
+    div#ticket div.ticketDay{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    div#ticket div.ticketDay #calendar td[class]{
+        width: 50px;
+    }
+    div#ticket div.ticketDay #calendar td[class].on{
+        width: 50px;
+    }
+
+    /* ---------------------------------------------- */
+    
+
+    div.ticketName{
+        margin-top: 30px;
+    }
+
+
+    /* ---------------------------------------------- */
+    
+    
+    div.ticketCare{
+        margin-top: 30px;
+        height: auto;
+    }
+    div.ticketCare p.care{
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+    div.ticketCare p.careContent{
+        font-size: 0.8em;
+        font-size: 0.8rem;
+        padding-bottom: 20px;
+    }
+    div#ticket input{
+        margin-left: 40%;
+        font-size: 1em;
+        font-size: 1rem;
+    }
+}

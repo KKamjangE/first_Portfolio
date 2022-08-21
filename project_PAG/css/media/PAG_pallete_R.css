@@ -1,0 +1,148 @@
+@charset "utf-8";
+@media all and (max-width: 1100px){
+    div#palleteTop{
+        position: relative;
+    }
+    div#palleteTop>p.pallete{
+        position: absolute;
+        top: 100px;
+        padding: 0;
+    }
+    div#palleteTop>p.palleteKo{
+        padding-top: 200px;
+    }
+
+    div#pallete{
+        width: 90%;
+        max-width: 1000px;
+    }
+    div#pallete div.top p.toptext2{
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+
+
+    /* ---------------------------------------------- */
+    
+
+    div#pallete div.middle img.middle2{
+        position: static;
+        margin-top: 70px;
+        margin-top: 7%;
+        margin-left: 10px;
+        margin-left: 1%;
+    }
+    div#pallete div.middle img.middle3{
+        clear: both;
+        margin-top: -70px;
+        margin-top: -7%;
+        margin-left: 25px;
+        margin-left: 2.5%;
+    }
+    div#pallete div.middle img.middle4{
+        position: static;
+        float: right;
+        margin-top: 10px;
+        margin-top: 1%;
+        margin-left: 0;
+        margin-right: 80px;
+        margin-right: 8%;
+    }
+    div#pallete div.middle p{
+        position: static;
+        margin-top: -55px;
+        margin-top: -5.5%;
+    }
+
+
+    /* ---------------------------------------------- */
+
+    div#pallete div.bottom img.bottom1{
+        margin-left: 15px;
+        margin-left: 1.5%;
+    }
+    div#pallete div.bottom img.bottom2{
+        margin-left: 10px;
+        margin-left: 1%;
+        height: auto;
+    }
+    div#pallete div.bottom img.bottom3{
+        float: left;
+        margin-top: 230px;
+    }
+    div#pallete div.bottom img.bottom4{
+        margin-left: 10px;
+        margin-left: 1%;
+        height: auto;
+        /* ---------------------------------------------- */
+    }
+
+
+}
+@media all and (max-width: 700px){
+    div#palleteTop>p.pallete{
+        font-size: 3em;
+        font-size: 3rem;
+    }
+    div#palleteTop>p.palleteKo{
+        padding-top: 180px;
+        font-size: 2em;
+        font-size: 2rem;
+    }
+    div#palleteMenu{
+        max-width: 700px;
+    }
+    div#palleteMenu p{
+        width: 130px;
+        margin:0 auto;
+        margin-top: 50px;
+        font-size: 1.3em;
+        font-size: 1.3rem;
+    }
+    div#palleteMenu p.smallPallete{
+        margin-left: 170px;
+        margin-left: 24.28571428571429%;
+    }
+    div#palleteMenu p.come{
+        margin-left: 10px;
+        margin-left: 1.428571428571429%;
+    }
+
+
+    /* ---------------------------------------------- */
+    
+    
+    div#pallete div.top p.toptext1{
+        font-size: 1.5em;
+        font-size: 1.5rem;
+    }
+    div#pallete div.top p.toptext2{
+        font-size: 0.9em;
+        font-size: 0.9rem;
+    }
+
+
+    /* ---------------------------------------------- */
+
+    div#pallete div.middle img.middle2{
+        margin-top: 30px;
+    }
+    div#pallete div.middle img.middle3{
+        margin-top: -30px;
+    }
+    div#pallete div.middle p{
+        position: static;
+        margin-top: -9%;
+        height: 40px;
+    }
+
+
+    /* ---------------------------------------------- */
+
+    div#pallete div.bottom p{
+        height: 40px;
+    }
+    div#pallete div.bottom img.bottom4{
+        margin-top: -60px;
+    }
+}

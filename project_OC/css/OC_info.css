@@ -1,0 +1,112 @@
+@charset "utf-8";
+#userBox{
+    display: none;
+}
+#top-section{}
+#top-section .bannerImg{
+    height: 300px;
+    background: url(../img/info/img01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-align: center;
+}
+#top-section .bannerImg img{
+    width: 200px;
+    height: 183px;
+    padding-top: 50px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+#info-section{
+margin-top: 200px;
+margin-bottom: 150px;
+}
+#info-section .infoBgImg{
+    height: 500px;
+    background: url(../img/info/img02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#info-section .infoBgImg #companyInfo-sec{
+    color: #fff;
+    text-align: left;
+}
+#info-section .infoBgImg #companyInfo-sec h2{
+    padding: 45px 0 30px;
+    font-size: 30px;
+    font-weight: 800;
+}
+#info-section .infoBgImg #companyInfo-sec p{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-bottom: 50px;
+}
+#info-section .infoBgImg #conceptInfo-sec{}
+#info-section .infoBgImg #conceptInfo-sec .infoBox{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    background: #fff;
+    text-align: center;
+}
+#info-section .infoBgImg #conceptInfo-sec .infoBox:first-child{
+    margin-left: 0;
+}
+#info-section .infoBgImg #conceptInfo-sec .infoBox img{
+    width: 80px;
+    padding: 25px 0 10px;
+}
+#info-section .infoBgImg #conceptInfo-sec .infoBox h2{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #6b8025;
+}
+#info-section .infoBgImg #conceptInfo-sec .infoBox p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+#info-section .infoBgImg #conceptInfo-sec .IB01{}
+#info-section .infoBgImg #conceptInfo-sec .IB02{}
+#info-section .infoBgImg #conceptInfo-sec .IB03{}
+#info-section .infoBgImg #conceptInfo-sec .IB04{}
+
+/* ------------------------------------------------------------------------ */
+
+#chefInfo-section{}
+#chefInfo-section h2 span{
+    font-size: 20px;
+    font-weight: 800;
+}
+#chefInfo-section h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 55px 0;
+    line-height: 1.5;
+}
+#chefInfo-section p{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* ------------------------------------------------------------------------ */
+
+#chefImg-section{
+    margin: 100px 0 194px;
+    height: 557px;
+}
+#chefImg-section img{
+    display: block;
+    float: left;
+}
+#chefImg-section img.chef01{}
+#chefImg-section img.chef02,
+#chefImg-section img.chef03{
+    margin-left: 17px;
+}

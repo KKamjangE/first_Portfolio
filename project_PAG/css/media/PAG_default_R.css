@@ -1,0 +1,146 @@
+@charset "utf-8";
+@media all and (max-width: 1100px){
+    /* 기본 */
+    .wBox{
+    }
+    #wrap{}
+    /* header */
+    header #userArea{}
+    header #userArea .wBox{
+        width: 100%;
+    }
+    header #userArea .wBox #loginList{
+        display: none;
+    }
+    header #userArea .wBox #loginList li{}
+    header #userArea .wBox #loginList li a{}
+    header #userArea .wBox #logo{
+        position: absolute;
+    }
+    header #userArea .wBox #logo h1{
+    }
+    header #userArea .wBox #logo h1 a{
+        padding: 30px;
+    }
+    header #userArea .wBox #logo h1 a img{
+        width: 80%;
+    }
+    header #userArea .wBox #search{
+        display: none;
+    }
+    header #userArea .wBox #search form{}
+    header #userArea .wBox #search form input{}
+    header #userArea .wBox #search form a{}
+    #userArea #login-icon{
+        display: block !important;
+        position: absolute;
+        top: 60px;
+        right: 15%;
+    }
+    #userArea #login-icon img{
+        width: 35px;
+    }
+    #userArea #menu-toggle-btn{
+        display: block !important;
+        float: right;
+        position: relative;
+        top: 65px;
+        left: 0;
+        margin-right: 5.454545454545455%;
+    }
+    #userArea #menu-toggle-btn span{}
+    header #userArea #mainMenu{}
+    header #userArea #mainMenu .wBox{}
+    header #userArea #mainMenu .wBox #menuList{
+        position: absolute;
+        z-index: 500;
+        top: 160px;
+        left: 0;
+        width: 100%;
+        margin: 0;
+    }
+    header #userArea #mainMenu .wBox #menuList li{
+        display: none;
+        width: 100%;
+        background: #fff;
+        margin: 0;
+    }
+    header #userArea #mainMenu .wBox #menuList li a{
+        width: 95%;
+        display: block !important;
+        padding: 15px 2.5%;
+        border-top: 1px solid #333;
+    }
+    header #mainMenu .subMenu{
+        display: none !important;
+    }
+    header #mainMenu #subMenuBg{
+        display: none !important;
+    }
+    #popupBg{
+        display: none !important;
+    }
+    .headerFixed{
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+        background: #fff;
+    }
+    /* footer */
+    footer{}
+    footer .wBox{
+        text-align: center;
+        width: 100%;
+        clear: both;
+    }
+    footer .wBox #logo{
+        display: none;
+    }
+    footer .wBox #footerMenu{
+        margin: 0 auto;
+        padding: 20px;
+    }
+    footer .wBox #footerMenu li{
+        margin-left: 15px;
+    }
+    footer .wBox ul#footerMenu li:not(:last-child)::after{
+        height: 14px;
+        margin-left: 12px;
+    }
+    footer .wBox #footerMenu li a{
+        font-size: 16px;
+    }
+    footer .wBox #info{
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+        font-size: 14px;
+    }
+    footer .wBox #snsIcon{
+        text-align: center;
+        margin-top: 40px;
+    }
+    footer .wBox #service{
+        display: none;
+    }
+    footer .wBox #media-service{
+        display: block;
+        padding: 10px;
+    }
+    footer .wBox #media-service p{}
+    footer .wBox #media-service p span{
+        font-size: 16px;
+        font-weight: 800;
+    }
+    footer .wBox #copyright{
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 50px;
+    }
+    @media all and (max-width: 700px){
+        #loginBg #login{
+            width: 100%;
+        }
+    }
+}

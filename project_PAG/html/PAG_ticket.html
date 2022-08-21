@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Pallete Art Gallery Ticket</title>
+<link rel="stylesheet" href="../css/PAG_default.css" type="text/css">
+<link href="../css/PAG_ticket.css" rel="stylesheet" type="text/css">
+<link href="../css/media/PAG_ticket_R.css" rel="stylesheet" type="text/css">
+<script src="../libs/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../libs/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="../libs/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="../js/PAG_default.js" type="text/javascript"></script>
+<script src="../js/PAG_default1100.js" type="text/javascript"></script>
+<script src="../js/Ticket.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <!-- ---------------------------------- 팝업창 ----------------------------------------- -->
+        <div id="popupBg"></div>
+        <div id="loginBg" class="popPosi">
+            <div id="login" class="nskFont">
+                <div class="loginwBox">
+                    <div id="logo"><h1><a href="PAG_main.html"><img src="../img/logo_icon/logo01_bg.png" alt="팔레트아트갤러리"></a></h1></div>
+                    <ul id="loginMenu">
+                        <a href="#">
+                            <li id="login">로그인</li>
+                        </a>
+                        <a href="#">
+                            <li id="notlogin">비회원 조회</li>
+                        </a>
+                    </ul>
+                    <label for="id" id="lbId">아이디</label>
+                    <input type="text" id="id" class="inputInfo" placeholder="ID">
+                    <label for="password" id="lbPassword">비밀번호</label>
+                    <input type="password" id="password" class="inputInfo" placeholder="PASSWORD">
+                    <button id="loginBtn">로그인</button>
+                    <label for="chB" id="saveId"><input type="checkbox" id="chB"> 아이디 저장</label>
+                    <ul id="find">
+                        <li><a href="#">아이디 찾기</a></li>
+                        <li><a href="#">비밀번호 찾기</a></li>
+                    </ul>
+                    <div id="anotherLogin">
+                        <a href="#" id="naver" class="another"><img src="../img/logo_icon/naver_icon.png" alt="네이버아이콘">네이버로 로그인</a>
+                        <a href="#" id="google" class="another"><img src="../img/logo_icon/google_icon.png" alt="구글아이콘">구글로 로그인</a>
+                    </div>
+                    <a href="#" id="signUp">회원가입</a>
+                </div> <!--loginwBox-->
+                <a href="#" id="close"><img src="../img/logo_icon/close_icon.png" alt="닫기"></a>
+            </div> <!--login-->
+        </div> <!--loginBg-->
+        <div id="errorPopPosi">
+            <div id="errorPop" class="nskFont">
+                <div id="errorText">
+                    <p>아이디 또는 비밀번호가 올바르지 않습니다.</p>
+                </div>
+                <a href="#" id="okBtn"><h3>확인</h3></a>
+            </div> <!--errorPop-->
+        </div> <!--errorPopPosi-->
+        <!-- ---------------------------------- 팝업창 ----------------------------------------- -->
+        <header class="ngFont">
+            <div id="userArea">
+                <div class="wBox">
+                    <ul id="loginList">
+                        <li class="login"><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul> <!--loginList-->
+                    <div id="logo"><h1><a href="PAG_main.html"><img src="../img/logo_icon/logo01_bg.png" alt="팔레트아트갤러리"></a></h1></div>
+                    <div id="search">
+                        <form action="#" method="post">
+                            <input type="text">
+                            <a href="#"></a>
+                        </form>
+                    </div> <!--search-->
+                </div> <!--wBox-->
+                <div id="login-icon">
+                    <a href="PAG_M_login.html" class="login">
+                        <img src="../img/logo_icon/login_icon.png" alt="">
+                    </a>
+                </div>
+                <span id="menu-toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <div id="mainMenu">
+                    <div class="wBox">
+                        <ul id="menuList">
+                            <li>
+                                <a href="PAG_pallete.html">Palette</a>
+                                <ul class="subMenu">
+                                    <li><a href="PAG_pallete.html">전시관 소개</a></li>
+                                    <li><a href="#">오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="PAG_exhibition.html">Exhibition</a>
+                                <ul class="subMenu">
+                                    <li><a href="PAG_exhibition.html">현재 전시</a></li>
+                                    <li><a href="#">예정 전시</a></li>
+                                    <li><a href="#">지난 전시</a></li>
+                                    <li><a href="#">대관 신청</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="PAG_ticket.html">Ticket</a>
+                                <ul class="subMenu">
+                                    <li><a href="PAG_ticket.html">예약 하기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Program</a>
+                                <ul class="subMenu">
+                                    <li><a href="#">체험 안내</a></li>
+                                    <li><a href="#">체험 예약</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="PAG_news.html">News</a>
+                                <ul class="subMenu">
+                                    <li><a href="PAG_news.html">공지사항</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                </ul>
+                            </li>
+                        </ul> <!--menuList-->
+                    </div> <!--wBox-->
+                    <div id="subMenuBg"></div>
+                </div> <!--mainMenu-->
+            </div> <!--userArea-->
+        </header>
+    </div>    
+    <div id="ticketTop">
+        <p class="ticket">Ticket</p>
+        <p class="ticketKo">예약</p>
+    </div>
+    <div id="ticketPoster">
+        <p>Photographs By YOSIGO</p>
+        <img class="left" src="../로고/왼쪽.png" alt="left">
+        <img class="right" src="../로고/오른쪽.png" alt="right">
+        <img class="poster" src="../img/포스터05.jpg" alt="poster">
+    </div>
+    <div id="ticket">
+        <div class="ticketDate">
+            <p class="date1">전시 기간: 2022.05.14 ~ 2022.05.20</p>
+            <p class="date2">장소: 팔레트 아트 갤러리</p>
+            <p class="date3">가격: 성인(20세 이상) 18000원</p>
+            <p class="date4">청소년 9000원<br>유아 및 어린이 5000원</p>
+            <p class="date5">운영 시간: 화,수,목,금,일요일 11:00am ~ 8:00pm</p>
+            <p class="date6">토요일 11:00am ~ 9:00pm<br>월요일 휴관</p>
+        </div>
+        <div class="ticketDay">
+            <p class="daytitle">관람일</p>
+            <table  id="calendar">
+                <tr class="calendarDay">
+                    <th class="day">일</th>
+                    <th class="day">월</th>
+                    <th class="day">화</th>
+                    <th class="day">수</th>
+                    <th class="day">목</th>
+                    <th class="day">금</th>
+                    <th class="day">토</th>
+                </tr>
+                <tr>
+                    <td class="day1">1</th>
+                    <td class="day2">2</th>
+                    <td class="day3">3</th>
+                    <td class="day4">4</th>
+                    <td class="day5">5</th>
+                    <td class="day6">6</th>
+                    <td class="day7">7</th>
+                </tr>
+                <tr>
+                    <td class="day1">8</th>
+                    <td class="day2">9</th>
+                    <td class="day3">10</th>
+                    <td class="day4">11</th>
+                    <td class="day5">12</th>
+                    <td class="day6">13</th>
+                    <td class="day7">14</th>
+                </tr>
+                <tr>
+                    <td class="day1">15</th>
+                    <td class="day2">16</th>
+                    <td class="day3">17</th>
+                    <td class="day4">18</th>
+                    <td class="day5">19</th>
+                    <td class="day6">20</th>
+                    <td class="day7">21</th>
+                </tr>
+                <tr>
+                    <td class="day1">22</th>
+                    <td class="day2">23</th>
+                    <td class="day3">24</th>
+                    <td class="day4">25</th>
+                    <td class="day5">26</th>
+                    <td class="day6">27</th>
+                    <td class="day7">28</th>
+                </tr>
+                <tr>
+                    <td class="day1">29</th>
+                    <td class="day2">30</th>
+                    <td class="day3">31</th>
+                </tr>
+            </table>
+        </div>
+        <div class="ticketName">
+            <img class="ticketImg" src="../티켓/ticket_01.jpg" alt="사진1">
+            <!-- <img class="ticketImg2" src="../전시/02.PNG" alt="사진2">
+            <p class="ticketName1">&lt; 요시고 사진전 : 청량한 여름의 기록&gt;</p>
+            <p class="ticketName2">팔레트 아트 갤러리에서 개최되는<br><b>포토그래퍼 요시고</b>의 국내 첫 개인전 입니다.</p>
+            <p class="ticketName3">사진이 품고 있는 <b>청량한 여름</b>의 온도를 느끼며<br>피로와 갈증을 해소하고,<br>또 다른 내일을 향한<br>기대와 안정이 쌓이는 시간이 되길 바랍니다.</p> -->
+        </div>
+        <div class="ticketCare">
+            <p class="care">유의사항</p>
+            <p class="careContent">- 10명 이상 단체 예매시 전화로 문의 해주세요.<br>- 온라인 회원은 결제 단계에서 정가의 20% 할인이 적용됩니다.<br>- 관람 당일 예매하신 티켓은 취소,변경,환불이 불가합니다.<br>- 예매하신 내역은 마이페이지에서 확인 가능합니다.<br>- 기간 만료 티켓으로는 재관람이 어렵습니다.<br>- 예매 시간 20분이 지나면 입장이 어렵습니다.<br>- 수수료 없이 예약 취소가 가능한 기간은 관람 전일 오후 5시까지 입니다.</p>
+        </div>
+        <input type="button" value="예약하기">
+    </div>
+    <footer class="ngFont">
+        <div class="wBox">
+            <div id="logo"><a href="PAG_main.html"><img src="../img/logo_icon/logo02_white.png" alt="팔레트아트갤러리"></a></div>
+            <ul id="footerMenu">
+                <li><a href="#">기업소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보보호정책</a></li>
+                <li><a href="PAG_news.html">공지사항</a></li>
+                <li><a href="#">대관신청</a></li>
+            </ul> <!--menuList-->
+            <div id="media-service">
+                <p><span>고객센터</span> Tel : 1234-5678<br>
+                평일 09:00~18:00(주말, 공휴일 휴무)</p>
+            </div> <!--media-service-->
+            <div id="info">
+                <p>기업명 : (주)Palette 대표이사 : 김보라 사업장 소재지 : 서울특별시 영등포구 여의대로 108<br>
+                   사업자 등록번호 : 123-45-67891 갤러리 소재지 : 서울특별시 종로구 세종로 세종대로 172</p>
+            </div> <!--info-->
+            <div id="snsIcon">
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/logo_icon/instar.png" alt="인스타그램"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="../img/logo_icon/youtube.png" alt="유튜브"></a>
+            </div> <!--snsIcon-->
+            <div id="service">
+                <p>고객센터<br>
+                   문의 전화번호 : 1234-5678<br>
+                   고객센터 업무시간 : 평일 09:00~18:00(주말, 공휴일 휴무)</p>
+            </div> <!--service-->
+            <div id="copyright">
+                <p>Copyright © Palette. All Rights Reserved.</p>
+            </div> <!--copyright-->
+        </div> <!--wBox-->
+    </footer>
+</body>
+</html>

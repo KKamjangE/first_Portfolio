@@ -1,0 +1,245 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: black;}
+/* brandvisual */
+div#mainbanner{ 
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#mainbanner ul.banner_list{
+    position: relative;
+    width: 100%;
+    height: 770px;
+}
+#mainbanner .banner_list li.bannerSlide{
+    position: absolute;
+    width: 100%;
+    background: center top no-repeat;
+    background-size: cover;
+}
+#mainbanner .banner_list li a{
+    display: block;
+    width: 100%;
+    height: 770px;
+}
+#mainbanner .banner_list li.BS01{
+    left: 200%;
+    background-image: url(../img/main/mainbanner01.png);
+}
+#mainbanner .banner_list li.BS02{
+    left: 0;
+    background-image: url(../img/main/mainbanner02.jpg);
+}
+#mainbanner .banner_list li.BS03{
+    left: 300%;
+    background-image: url(../img/main/mainbanner03.jpg);
+}
+#mainbanner .banner_list li.BS04{
+    left: 100%;
+    background-image: url(../img/main/mainbanner04.jpg);
+}
+#mainbanner div#slideBtnBox{
+    position: absolute;
+    width: 120px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#mainbanner ul#slideBtn li{
+    float: left;
+    margin: 0 5px;
+}
+#mainbanner ul#slideBtn li a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .5);
+}
+#mainbanner ul#slideBtn li a:hover,
+#mainbanner ul#slideBtn li.active a{
+    background-color: rgba(255, 255, 255, .9);
+    cursor: pointer;
+}
+#mainbanner div#bannerText{
+    position: absolute;
+    color: white;
+    bottom: 339px;
+}
+#mainbanner div#bannerText h2#date{
+    font-size: 20px;
+}
+#mainbanner div#bannerText h2#enName{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0 40px;
+    line-height: 55px;
+}
+#mainbanner div#bannerText h2#koName{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------------- */
+
+#exhibition{
+}
+#exhibition h2{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 72px;
+}
+#exhibition #artPoster{}
+#exhibition li.poster{}
+#exhibition li.poster a{
+    float: left;
+    width: 275px;
+    height: 700px;
+    overflow: hidden;
+}
+#exhibition li div#posterText{
+    display: none;
+    width: 450px;
+    padding: 270px 0;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    text-align: center;
+}
+#exhibition li div#posterText h3{
+    font-size: 20px;
+}
+#exhibition li div#posterText p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* -------------------------------------------------------------------- */
+
+div#artist{
+    position: relative;
+    height: 1750px;
+    background-color: #f0f0f0;
+    margin-top: 72px;
+}
+#artist div#bg01{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+}
+#artist div#bg02{
+    position: absolute;
+    width: 100px;
+    height: 1750px;
+    background-color: white;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+#artist div#bg03{
+    position: absolute;
+    width: 910px;
+    height: 200px;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+}
+#artist h2{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 34px;
+}
+#artist div.artistBox{
+    width: 500px;
+    height: 550px;
+    background-color: white;
+}
+#artist div.artistBox a{
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#artist div.infoBox{
+    padding: 15px;
+}
+#artist div.infoBox h3{
+    font-size: 20px;
+}
+#artist div.infoBox h4{
+    font-size: 16px;
+    margin-top: 8px;
+}
+#artist div.infoBox p{
+    font-size: 12px;
+    margin-top: 25px;
+}
+#artist div.aB01{
+    padding-top: 150px;
+}
+#artist div#more{
+    display: none;
+    position: absolute;
+    width: 500px;
+    padding: 188px 0 187px;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+}
+#artist div.aB01 a{
+    background-image: url(../img/main/artist01.png);
+}
+#artist div.aB02{
+    float: right;
+    margin-top: -400px;
+}
+#artist div.aB02 a{
+    background-image: url(../img/main/artist02.png);
+}
+#artist div.aB03{
+    margin-top: 150px;
+}
+#artist div.aB03 a{
+    background-image: url(../img/main/artist03.png);
+}
+#artist div.aB04{
+    float: right;
+    margin-top: -400px;
+}
+#artist div.aB04 a{
+    background-image: url(../img/main/artist04.png);
+}
+
+/* -------------------------------------------------------------------- */
+
+#event{
+    margin-top: 100px;
+}
+#event a{}
+#event a .banner{
+    background-image: url(../img/main/event_banner01.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+}
+
+/* -------------------------------------------------------------------- */
+
+div#rental{
+    margin: 150px 0 100px;
+}
+#rental img{
+    width: 100%;
+}

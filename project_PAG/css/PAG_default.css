@@ -1,0 +1,390 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+@import url(media/PAG_default_R.css) all and (max-width:1100px);
+@import url(media/PAG_main_R.css) all and (max-width:1100px);
+.ngFont{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.nskFont{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+*{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: black;}
+.wBox{
+    width: 1100px;
+    margin: 0 auto;
+}
+div#userArea{
+    height: 160px;
+}
+header ul#loginList{
+    text-align: right;
+}
+header ul#loginList li{
+    position: relative;
+    display: inline-block;
+    font-size: 10pt;
+    margin-left: 15px;
+    top: 18px;
+}
+header ul#loginList li:last-child::after{
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background-color: #333;
+    content: "";
+    left: -10px;
+    top: 2px;
+}
+header div#logo{
+    margin-top: -21px;
+    margin-left: -12px;
+}
+header div#logo a{
+    display: inline-block;
+    width: 292px;
+    height: 160px;
+}
+header div#search{
+    width: 250px;
+    height: 25px;
+    background-color: #c8c8c8;
+    margin-left: 726px;
+    margin-top: -150px;
+    border-radius: 50px;
+}
+header div#search input{
+    background-color: #c8c8c8;
+    border: none;
+    width: 210px;
+    height: 25px;
+    margin-left: 10px;
+}
+header div#search a{
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin: 4px auto;
+    background-size: 16px 16px;
+    background-image: url(../img/logo_icon/search_icon.png);
+    background-repeat: no-repeat;
+}
+input:focus{outline: none;}
+header ul#menuList{
+    position: relative;
+    left: 295px;
+    top: 40px;
+}
+header ul#menuList>li{
+    position: relative;
+    float: left;
+    width: 170px;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 800;
+}
+header ul#menuList>li>a{
+    display: block;
+    padding: 20px 0;
+}
+header #menuList .subMenu{
+    display: none;
+    /* 서브메뉴 디스플레이 */
+    position: absolute;
+    width: 170px;
+    z-index: 700;
+}
+header #menuList .subMenu li{
+    font-size: 20px;
+    text-align: center;
+}
+header #menuList .subMenu li a{
+    display: block;
+    padding: 15px 0;
+}
+header #menuList .subMenu li a:first-child{
+    padding: 20px 0;
+}
+header #mainMenu #subMenuBg{
+    display: none;
+    /* 서브메뉴 배경 디스플레이 */
+    position: absolute;
+    top: 151px;
+    left: 0;
+    width: 100%;
+    height: 260px;
+    background-color: #fff;
+    z-index: 600;
+    border-top: 2px solid #061a3b;
+}
+#userArea #login-icon{
+    display: none;
+}
+#userArea #menu-toggle-btn{
+    display: none;
+    width: 35px;
+    cursor: pointer;
+}
+#userArea #menu-toggle-btn span{
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    border-radius: 5px;
+}
+#userArea #menu-toggle-btn span:nth-child(2){
+    margin: 8px 0;
+}
+.mainMenuFixed{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+}
+
+/* -------------------------------------------------------------------------- */
+
+label#lbId{
+    display: none;
+}
+label#lbPassword{
+    display: none;
+}
+.popPosi{
+    display: none;
+    /* 팝업창 display */
+    position: fixed;
+    z-index: 800;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+div#popupBg{
+    display: none;
+    /* 팝업창 배경 display */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 400;
+    background-color: rgba(0, 0, 0, .6);
+}
+div#login{
+    position: relative;
+    width: 800px;
+    height: 580px;
+    margin: 200px auto;
+    background-color: white;
+    text-align: center;
+}
+#login div#logo img{
+    width: 164px;
+    margin-top: 40px;
+}
+#login div.loginwBox{
+    width: 500px;
+    margin: 0 auto;
+}
+#login ul#loginMenu{
+    margin-top: 20px;
+    font-size: 20px;
+}
+#login ul#loginMenu li{
+    width: 248px;
+    float: left;
+    padding: 6px 0;
+}
+#login ul#loginMenu li#login{
+    border: 1px solid #000;
+    border-bottom: none;
+}
+#login ul#loginMenu li#notlogin{
+    border-bottom: 1px solid #000;
+}
+#login input.inputInfo{
+    width: 350px;
+    height: 50px;
+    float: left;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+}
+#login button#loginBtn{
+    width: 130px;
+    height: 130px;
+    background-color: #061a3b;
+    border-style: none;
+    border-radius: 15px;
+    color: #fff;
+    float: right;
+    margin-top: -49px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#login label#saveId{
+    float: left;
+    margin-top: 35px;
+    font-size: 12px;
+}
+#login ul#find{
+    float: right;
+    font-size: 12px;
+    margin-top: 35px;
+}
+#login ul#find li{
+    position: relative;
+    display: inline-block;
+    margin-left: 12px;
+}
+#login ul#find li:last-child::after{
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background-color: #c8c8c8;
+    content: "";
+    left: -8px;
+    top: 4px;
+}
+#login #anotherLogin{
+    margin-top: 276px;
+}
+#login a.another{
+    width: 243px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 12px 0;
+    margin-top: 20px;
+    font-size: 16px;
+}
+#login a.another img{
+    margin-right: 15px;
+    vertical-align: -2px;
+}
+#login a#naver{
+    float: left;
+}
+#login a#google{
+    float: right;
+    margin-left: 10px;
+}
+#login a#signUp{
+    width: 500px;
+    float: left;
+    background-color: #061a3b;
+    border-radius: 15px;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 20px;
+}
+#login a#close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+div#errorPopPosi{
+    display: none;
+    position: fixed;
+    z-index: 1200;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+div#errorPop{
+    position: relative;
+    width: 380px;
+    height: 120px;
+    margin: 400px auto;
+    background-color: #fff;
+    text-align: center;
+}
+#errorPop div#errorText{
+    padding: 15px;
+    font-size: 16px;
+}
+#errorPop a#okBtn{
+    display: inline-block;
+    background-color: #061a3b;
+    color: #fff;
+    border-radius: 15px;
+    padding: 8px 68px;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+footer{
+    background-color: #222;
+    color: #c8c8c8;
+    font-size: 10pt;
+    padding: 35px 0;
+}
+footer div#logo{
+    display: inline-block;
+}
+footer ul#footerMenu{
+    margin-top: -85px;
+    margin-left: 190px;
+}
+footer ul#footerMenu li{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0 5px;
+}
+footer ul#footerMenu li:first-child{
+    margin-left: 0;
+}
+footer ul#footerMenu li:not(:last-child)::after{
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background-color: #c8c8c8;
+    content: "";
+    margin-left: 7px;
+    margin-top: 2px;
+}
+footer ul#footerMenu a{
+    color: #c8c8c8;
+}
+footer div#info{
+    margin-left: 190px;
+    margin-top: 38px;
+}
+footer div#snsIcon{
+    text-align: right;
+    margin-top: -100px;
+}
+footer div#snsIcon img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+footer div#service{
+    text-align: right;
+    margin-top: 18px;
+}
+footer div#service span{
+    font-size: 16px;
+    font-weight: bold;
+}
+footer #media-service{
+    display: none;
+}
+footer div#copyright{
+    text-align: right;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, .5);
+}

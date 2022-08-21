@@ -1,0 +1,213 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: black;}
+label#lbId{
+    display: none;
+}
+label#lbPassword{
+    display: none;
+}
+div#popUpBg{
+    display: none;
+    /* 팝업창 배경 display */
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 400;
+    background-color: rgba(0, 0, 0, .6);
+}
+#loginBg{
+    display: block;
+    /* 팝업창 display */
+    position: static;
+    z-index: 800;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+div#login{
+    position: relative;
+    width: 800px;
+    height: 450px;
+    margin: 80px auto;
+    background-color: white;
+    text-align: center;
+}
+#login div.loginwBox{
+    width: 500px;
+    margin: 0 auto;
+}
+#login ul#loginMenu{
+    margin-top: 20px;
+    font-size: 20px;
+}
+#login ul#loginMenu li{
+    width: 248px;
+    float: left;
+    padding: 6px 0;
+}
+#login ul#loginMenu li#login{
+    border: 1px solid #000;
+    border-bottom: none;
+}
+#login ul#loginMenu li#notlogin{
+    border-bottom: 1px solid #000;
+}
+#login input.inputInfo{
+    width: 350px;
+    height: 50px;
+    float: left;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+}
+#login button#loginBtn{
+    width: 130px;
+    height: 130px;
+    background-color: #061a3b;
+    border-style: none;
+    border-radius: 15px;
+    color: #fff;
+    float: right;
+    margin-top: -49px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#login label#saveId{
+    float: left;
+    margin-top: 35px;
+    font-size: 12px;
+}
+#login ul#find{
+    float: right;
+    font-size: 12px;
+    margin-top: 35px;
+}
+#login ul#find li{
+    position: relative;
+    display: inline-block;
+    margin-left: 12px;
+}
+#login ul#find li:last-child::after{
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background-color: #c8c8c8;
+    content: "";
+    left: -8px;
+    top: 4px;
+}
+#login div#anotherLogin{
+    float: left;
+    margin-top: 0;
+}
+#login a.another{
+    width: 243px;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 12px 0;
+    margin-top: 20px;
+    font-size: 16px;
+}
+#login a.another img{
+    margin-right: 15px;
+    vertical-align: -2px;
+}
+#login a#naver{
+    float: left;
+}
+#login a#google{
+    float: right;
+    margin-left: 10px;
+}
+#login a#signUp{
+    width: 500px;
+    float: left;
+    background-color: #061a3b;
+    border-radius: 15px;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 20px;
+}
+#login a#close{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+div#errorPopPosi{
+    display: none;
+    position: fixed;
+    z-index: 1200;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#errorPopPosi #errorPop{
+    position: relative;
+    width: 380px;
+    height: 120px;
+    margin: 300px auto !important;
+    background-color: #fff;
+    text-align: center;
+}
+#errorPop div#errorText{
+    padding: 15px;
+    font-size: 16px;
+}
+#errorPop a#okBtn{
+    display: inline-block;
+    background-color: #061a3b;
+    color: #fff;
+    border-radius: 15px;
+    padding: 8px 68px;
+    font-size: 20px;
+    margin-top: 3px;
+}
+@media all and (max-width: 700px){
+    #login div.loginwBox{
+        width: 350px;
+    }
+    #login ul#loginMenu{
+        font-size: 16px;
+    }
+    #login ul#loginMenu li{
+        width: 173px;
+    }
+    #login input.inputInfo{
+        width: 200px;
+        height: 40px;
+        font-size: 14px;
+    }
+    #login ul#find{
+        margin-top: 25px !important;
+    }
+    #login a.another{
+        position: relative;
+        width: 168px;
+        padding: 12px 0;
+        top: 90px;
+        margin: 0;
+        font-size: 14px;
+    }
+    #login a#google{
+        margin-left: 10px;
+    }
+    #login a#signUp{
+        position: relative;
+        top: -25px;
+        width: 350px;
+        color: #fff;
+        margin-top: 0;
+    }
+}

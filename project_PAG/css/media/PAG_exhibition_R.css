@@ -1,0 +1,268 @@
+@charset "utf-8";
+@media all and (max-width: 1100px){
+    div#exhibitionTop{
+        position: relative;
+    }
+    div#exhibitionTop>p.exhibition{
+        position: absolute;
+        top: 100px;
+        padding: 0;
+    }
+    div#exhibitionTop>p.exhibitionKo{
+        padding-top: 200px;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div#exhibitionPoster{
+        margin-top: 50px;
+    }
+    /* div#exhibitionPoster img{
+        margin-top: 50px;
+        width: auto;
+        height: 500px;
+    }
+    div#exhibitionPoster img.poster1{
+        margin-left: -350px;
+        margin-left: -31.81818181818182%;
+    }
+    div#exhibitionPoster img.poster2{
+        margin-left: 200px;
+        margin-left: 18.18181818181818%;
+    }
+    div#exhibitionPoster img.poster3{
+        margin-left: 200px;
+        margin-left: 18.18181818181818%;
+    } */
+
+
+    /* ---------------------------------------------- */
+
+
+    div#exTitle{
+        width: 90%;
+        max-width: 1000px;
+    }
+    div#exTitle p.bigTitle{
+        font-size: 3.5em;
+        font-size: 3.5rem;
+    }
+    div#exTitle p.title{
+        font-size: 2.5em;
+        font-size: 2.5rem;
+    }
+
+
+
+    /* ---------------------------------------------- */
+
+
+    div#ex{
+        width: 90%;
+    }
+    div#ex div.ex1 img.exImg1{
+        width: 500px;
+        width: 50%;
+    }
+    div#ex div.ex1 img.exImg2{
+        width: 45%;
+        margin-left: 3%;
+    }
+    div#ex div.ex1 p.exText1{
+        font-size: 1.5em;
+        font-size: 1.5rem;
+    }
+    div#ex div.ex1 p.exText2{
+        font-size: 1.5em;
+        font-size: 1.5rem;
+    }
+    div#ex2{
+        width: 90%;
+    }
+    div#ex div.ex2 img.exImg3{
+        width: 520px;
+        width: 52%;
+        margin-left: 48%;
+    }
+    div#ex div.ex2 img.exImg4{
+        width: 46%;
+        margin-top: -250px;
+        margin-top: -25%;
+    }
+    div#ex div.ex2 img.exImg5{
+        width: 280px;
+        width: 28%;
+        margin-left: 72%;
+        margin-top: -400px;
+    }
+    div#ex div.ex2 p.exText3{
+        width: 100%;
+        max-width: 1000px;
+        margin-top: 20px;
+        font-size: 1.5em;
+        font-size: 1.5rem;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div#exBottom{
+        width: 90%;
+        max-width: 1000px;
+    }
+    div#exBottom p.when{
+        margin-left: 150px;
+        margin-left: 15%;
+    }
+    div#exBottom p.where{
+        margin-left: 150px;
+        margin-left: 15%;
+    }
+    div#exBottom input{
+        margin-left: 450px;
+        margin-left: 43%;
+    }
+}
+
+
+@media all and (max-width: 700px){
+    div#exhibitionTop>p.exhibition{
+        font-size: 3em;
+        font-size: 3rem;
+    }
+    div#exhibitionTop>p.exhibitionKo{
+        padding-top: 180px;
+        font-size: 2em;
+        font-size: 2rem;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div#exhibitionMenu p{
+        width: 19%;
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+    div#exhibitionMenu p.now{
+        margin-left: 7%;
+    }
+    div#exhibitionMenu p{
+        margin-left: 4%;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div#exhibitionPoster{
+        height: 550px;
+        background: url(../../img/포스터05.jpg) center center no-repeat;
+        background-size: 60%;
+        background-color: #bee4e5;
+    }
+    /* div#exhibitionPoster img{
+        margin: 0 auto;
+    }
+    div#exhibitionPoster img.poster1{
+        display: none;
+        margin: 0;
+    }
+    div#exhibitionPoster img.poster2{
+        width: 320px;
+        height: initial;
+        margin-top: 25px;
+        margin-left: 26%;
+        text-align: center;
+    }
+    div#exhibitionPoster img.poster3{
+        display: none;
+        margin: 0;
+    } */
+    
+
+    /* ---------------------------------------------- */
+
+
+    div#exTitle{
+        margin-top: 50px;
+        margin-top: 5%;
+        max-width: 700px;
+    }
+    div#exTitle p.bigTitle{
+        font-size: 2em;
+        font-size: 2rem;
+    }
+    div#exTitle p.title{
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div#ex{
+        max-width: 650px;
+        margin-top: -200px;
+    }
+    div#ex div.ex1 p.exText1{
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+    div#ex div.ex1 p.exText2{
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+    div#ex2{
+        max-width: 650px;
+    }
+    div#ex div.ex2 img.exImg4{
+        margin-top: -170px;
+        margin-top: -26%;
+    }
+    div#ex div.ex2 img.exImg5{
+    }
+    div#ex div.ex2 p.exText3{
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+
+
+    /* ---------------------------------------------- */
+
+
+    div#exBottom{
+        height: 150px;
+        max-width: 600px;
+        font-size: 1.2em;
+        font-size: 1.2rem;
+    }
+    div#exBottom p.when,div#exBottom p.where{
+        width: 100%;
+        border: 0;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    div#exBottom p.when{
+        margin-top: 25px;
+    }
+    div#exBottom p.where{
+        margin-top: -20px;
+    }
+    div#exBottom input{
+        width: 80px;
+        height: 25px;
+        margin-top: 10px;
+        font-size: 0.8em;
+        font-size: 0.8rem;
+    }
+
+
+}
+

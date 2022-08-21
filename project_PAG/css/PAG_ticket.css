@@ -1,0 +1,243 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+
+*{margin: 0; padding: 0; text-decoration: none; list-style: none;}
+a{text-decoration: none; color: black;}
+
+
+
+div#ticketTop{
+    width: 100%;
+    height: 315px;
+    font-family: 'Noto Sans KR';
+    color: #fff;
+    background: url(../top/ticket.jpg) center no-repeat;
+}
+div#ticketTop>p.ticket{
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 50pt;
+    font-weight: bolder;
+}
+div#ticketTop>p.ticketKo{
+    width: 100%;
+    text-align: center;
+    font-size: 30pt;
+}
+
+
+/* ---------------------------------------------- */
+
+
+div#ticketPoster{
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    font-family: 'Noto Sans KR';
+}
+div#ticketPoster p{
+    width: 100%;
+    text-align: center;
+    font-size: 30pt;
+    font-weight: bolder;
+}
+div#ticketPoster img.left{
+    width: 70px;
+    margin-left: 150px;
+}
+div#ticketPoster img.right{
+    width: 70px;
+    margin-left: 650px;
+    margin-top: 250px;
+}
+div#ticketPoster img.poster{
+    width: 500px;
+    margin-left: 300px;
+    margin-left: 27.27272727272727%;
+    margin-top: -300px;
+}
+
+
+/* ---------------------------------------------- */
+
+
+div#ticket{
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 100%;
+    max-width: 1100px;
+    font-family: 'Noto Sans KR';
+}
+div#ticket div.ticketDate{
+    position: relative;
+    width: 550px;
+    height: 495px;
+    border: 1px solid #999;
+}
+div#ticket div.ticketDate p[class^=date]{
+    width: 475px;
+    margin-left: 25px;
+    font-size: 16pt;
+}
+div#ticket div.ticketDate p[class^=date]:first-child{
+    margin-top: 20px;
+}
+div#ticket div.ticketDate p.date1{
+    padding: 10px 10px 30px 10px;
+    border-bottom: 1px solid #999;
+}
+div#ticket div.ticketDate p.date2{
+    padding: 30px 10px 30px 10px;
+    border-bottom: 1px solid #999;
+}
+
+div#ticket div.ticketDate p.date3{
+    padding: 30px 10px 0 10px;
+    
+}
+div#ticket div.ticketDate p.date4{
+    width: 400px;
+    padding: 0 0 30px 60px;
+}
+div#ticket div.ticketDate p.date5{
+    padding: 30px 10px 0 10px;
+    border-top: 1px solid #999;
+    
+}
+div#ticket div.ticketDate p.date6{
+    width: 400px;
+    padding-left: 105px;
+}
+div#ticket div.ticketDay{
+    width: 510px;
+    height: 495px;
+    margin-left: 53.5%;
+    margin-top: -45%;
+}
+div#ticket div.ticketDay p{
+    width: 510px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20pt;
+    text-align: center;
+    border: 1px solid #999;
+}
+div#ticket div.ticketDay #calendar{
+    /* position: relative; */
+    width: 510px;
+    height: 425px;
+    margin-top: 20px;
+    font-size: 18pt;
+    border: 1px solid #999;
+}
+table{
+    border-collapse: collapse
+}
+div#ticket div.ticketDay table#calendar tr.calendarDay{
+    /* position: relative; */
+    border-bottom: 1px solid #999;
+    border-width: 50%;
+}
+div#ticket div.ticketDay #calendar td[class]{
+    /* position: relative; */
+    width: 73px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 16pt;
+    cursor: pointer;
+}
+div#ticket div.ticketDay #calendar td[class].on{
+    /* position: relative; */
+    width: 73px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #061a3b;
+    color: #fff;
+}
+
+
+/* ---------------------------------------------- */
+
+
+div.ticketName{
+    /* position: relative; */
+    /* top: 35px; */
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 35px;
+    height: 530px;
+    border: 1px solid #999;
+    font-family: 'Noto Sans KR';
+}
+div.ticketName img.ticketImg{
+    width: 100%;
+}
+/* div.ticketName img.ticketImg2{
+    margin-top: 70px;
+    width: 310px
+}
+div.ticketName p.ticketName1{
+    position: absolute;
+    top: 120px;
+    margin-left: 650px;
+    width: 450px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+div.ticketName p.ticketName2{
+    position: absolute;
+    top: 210px;
+    margin-left: 680px;
+    width: 450px;
+    font-size: 20px;
+}
+div.ticketName p.ticketName3{
+    position: absolute;
+    top: 310px;
+    margin-left: 680px;
+    width: 450px;
+    font-size: 20px;
+} */
+
+
+/* ---------------------------------------------- */
+
+
+div.ticketCare{
+    width: 100%;
+    max-width: 1100px;
+    height: 350px;
+    margin-top: 70px;
+    border: 1px solid #999;
+    font-family: 'Noto Sans KR';
+}
+div.ticketCare p.care{
+    margin: 20px 0 20px 30px;
+    font-size: 20pt;
+    font-weight: bolder;
+}
+div.ticketCare p.careContent{
+    margin-left: 30px;
+    font-size: 18pt;
+}
+div#ticket input{
+    width: 100px;
+    margin-top: 100px;
+    margin-left: 500px;
+    height: 40px;
+    font-size: 14pt;
+    color: #fff;
+    border: none;
+    background-color: #f79775;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 250px;
+}

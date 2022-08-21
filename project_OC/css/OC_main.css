@@ -1,0 +1,442 @@
+@charset "utf-8";
+#banners{
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 500px;
+}
+#banners ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 500px;
+}
+#banners li{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+}
+#banners li a{
+    display: block;
+}
+#banners .bannerImg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+}
+#banners .BS01{
+    left: 0;
+    background: url(../img/main/main_banner/main_banner01.png);
+}
+#banners .BS02{
+    left: 100%;
+    background: url(../img/main/main_banner/main_banner02.jpg);
+}
+#banners .BS03{
+    left: 200%;
+    background: url(../img/main/main_banner/main_banner03.jpg);
+}
+#banners .BS04{
+    left: 300%;
+    background: url(../img/main/main_banner/main_banner04.jpg);
+}
+#banners .BS05{
+    left: 400%;
+    background: url(../img/main/main_banner/main_banner05.jpg);
+}
+#mainbanner div#btnBox{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+div#slideBtnBox{
+    position: absolute;
+    width: 130px;
+    bottom: 20px;
+    left: 470px;
+}
+ul#slideBtn{
+    text-align: center;
+}
+ul#slideBtn li{
+    display: block;
+    float: left;
+    margin: 0 4px;
+}
+ul#slideBtn li a{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .3);
+}
+ul#slideBtn li a:hover,
+ul#slideBtn li.select a{
+    background-color: rgba(0, 0, 0, .6);
+}
+
+/* ------------------------------------------------------------------------ */
+
+div#notification{
+    height: 80px;
+    background-color: #6b8025;
+}
+#notification h2{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    padding-top: 28px;
+}
+#notification h2::after{
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    content: "";
+    background-color: #fff;
+    margin-top: 4px;
+    margin-left: 14px;
+}
+#notification ul{
+    margin-top: -21px;
+    margin-left: 100px;
+    display: none;
+}
+#noti p{
+    color: #fff;
+    display: block;
+    margin-top: -21px;
+    margin-left: 100px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+#diet{
+    position: relative;
+}
+#diet .wBox{}
+#diet h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 112px;
+    margin-bottom: 80px;
+}
+#diet #dietList{
+    position: relative;
+    overflow: hidden;
+    width: 1100px;
+    height: 422px;
+    margin-bottom: 150px;
+}
+#diet #dietList #dietUl{
+    width: 5000px;
+}
+#diet #dietList li{
+    float: left;
+    width: 500px;
+    margin: 0 25px;
+}
+#diet #dietList li:first-child{
+}
+#diet #dietList li .imgBox{
+    border-radius: 35px;
+}
+#diet h3{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 5px 0;
+}
+#diet p{
+    font-size: 20px;
+}
+#diet div#btn{
+    float: right;
+    text-align: center;
+    margin-top: -40px;
+    font-size: 20px;
+}
+#diet div#btn a{
+    display: block;
+    float: left;
+    padding: 7px 20px;
+    background-color: #d7dc44;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#diet div#btn a:hover{
+    color: #fff;
+    background-color: #6b8025;
+}
+#diet .slideBtn{}
+#diet .slideBtn img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 270px;
+    cursor: pointer;
+}
+#diet .slideBtn img#left{
+    left: 320px;
+}
+#diet .slideBtn img#right{
+    right: 320px;
+}
+
+/* ------------------------------------------------------------------------ */
+
+div#cardBanner{
+    height: 280px;
+    margin-bottom: 120px;
+}
+div#cardBanner img{
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------ */
+
+div#brand{
+    height: 540px;
+}
+#brand a.brandBox{
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 70px;
+}
+#brand a.brandBox:first-child{
+    margin-left: 0;
+}
+#brand a.brandBox p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    line-height: 1.3;
+}
+#brand div#moreBtn{
+    text-align: center;
+}
+#brand a#more{
+    display: inline-block;
+    text-align: center;
+    background-color: #d7dc44;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 7px 20px;
+}
+#brand a#more:hover{
+    background-color: #6b8025;
+    color: #fff;
+}
+
+/* ------------------------------------------------------------------------ */
+
+div#review{
+    height: 590px;
+}
+div#review .wBox{
+    position: relative;
+}
+div#reviewArea{
+    float: left;
+    margin-right: 30px;
+}
+#review h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 80px;
+}
+#review #reviewList{
+    position: relative;
+    overflow: hidden;
+    width: 1100px;
+    height: 590px;
+}
+#review #reviewList ul{
+    width: 3500px;
+}
+#review #reviewList ul li{
+    position: relative;
+    float: left;
+    width: 1100px;
+    margin: 0 25;
+}
+#review div#reviewtext{
+    width: 350px;
+    height: 270px;
+    border: 1px solid #b3b3b3;
+    border-radius: 15px;
+}
+#review div#reviewtext p{
+    font-size: 16px;
+    padding: 15px 20px;
+}
+#review div#userName{
+    position: relative;
+    font-size: 20px;
+    margin-top: 40px;
+}
+#review div#userName p{
+    display: inline-block;
+}
+#review div#userName img{
+    position: absolute;
+    left: 120px;
+    top: -10px;
+}
+#review div#reviewimg{
+    position: absolute;
+    top: 0;
+    left: 380px;
+}
+#review div#reviewimg img{
+    border-radius: 20px;
+}
+#review div#reviewimg .thisImg{
+}
+#review div#reviewimg .reviewNextImg{
+    position: absolute;
+    left: 450px;
+}
+#review #reviewimg a.reviewNextImg{
+    display: inline-block;
+    width: 417px;
+    height: 350px;
+    border-radius: 20px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 10%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 1) 70%
+        ),url(../img/main/review/우삼겹샤브샤브.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    }
+    
+/* ------------------------------------------------------------------------ */
+
+#product ul#menuList{
+    width: 800px;
+    height: 104px;
+    margin: 73px auto;
+}
+#product ul#menuList li{
+    float: left;
+    margin-left: 75px;
+}
+#product ul#menuList li:first-child{
+    margin-left: 0;
+}
+#product ul#menuList li img{
+    width: 100px;
+    height: 100px;
+    opacity: .5;
+    border-radius: 20px;
+}
+#product ul#menuList li img:hover,
+#product ul#menuList li img.select{
+    opacity: 1;
+}
+#mainProduct{
+    margin-top: 100px;
+}
+#product #infotext p{
+    font-size: 16px;
+    margin: 3px 0;
+}
+#product #infotext h3{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-top: 3px;
+}
+#product01{
+    float: left;
+}
+#product02{
+    float: right;
+}
+#mainProduct{
+    height: 450px;
+}
+#subProduct{
+    height: 750px;
+}
+.productBox{
+    height: 380px;
+    float: left;
+    padding-right: 25px;
+}
+#product05,
+#product08{
+    padding-right: 0;
+}
+#allViewBtn{
+    text-align: center;
+}
+#allViewBtn a{
+    text-align: center;
+    padding: 7px 20px;
+    background-color: #d7dc44;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#allViewBtn a:hover{
+    background-color: #6b8025;
+    color: #fff;
+}
+
+/* ------------------------------------------------------------------------ */
+
+#eventBanner{
+    height: 400px;
+    margin: 200px 0 150px;
+}
+#eventBanner img{
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------------ */
+
+#suggest h2{
+    font-size: 30px;
+    margin-bottom: 100px;
+    margin-top: 3px;
+    line-height: 1.3;
+}
+.sugProduct{
+    float: left;
+    margin-left: 25px;
+}
+.sugProduct:first-child{
+    margin-left: 0;
+}
+#suggest #product{
+    height: 380px;
+}
+#sugBtn{
+    margin-bottom: 194px;
+}
+#sugBtn{
+    text-align: center;
+}
+#sugBtn a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #d7dc44;
+    color: #000;
+    margin: 0 4px;
+}
+#sugBtn a p{
+    padding-top: 5px;
+}
+#sugBtn a:hover,
+#sugBtn .select{
+    color: #fff;
+    background-color: #6b8025;
+}

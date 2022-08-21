@@ -1,0 +1,823 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+html,body,.wrap,.container,.main_content_wrap{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow: hidden;
+}
+.wrap{
+    position: relative;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+.main_content_wrap{
+    position: relative;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0 0 0;
+    z-index: 10;
+}
+.header_content{
+    max-width: 1200px;
+    min-width: auto;
+    margin: 0 auto;
+    height: 100px;
+    padding: 0 0 30px 0;
+}
+.header_content .logo_box{
+    float: left;
+}
+.header_content .logo_box h1{}
+.header_content .logo_box h1 a{}
+.header_content .logo_box h1 a img{
+    width: 100px;
+}
+.header_content .headerMenu_box{
+    float: right;
+    padding: 30px 0 0 0;
+}
+.header_content .headerMenu_box .resume_btn{
+    float: left;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+.header_content .headerMenu_box .resume_btn a{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+}
+.header_content .headerMenu_box .menu_toggle_btn{
+    float: right;
+    cursor: pointer;
+    margin-top: 7px;
+}
+.header_content .headerMenu_box .menu_toggle_btn span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    transition: .4s;
+    content: "";
+}
+.header_content .headerMenu_box .menu_toggle_btn span:nth-child(2){
+    margin: 10px 0;
+}
+.menu_toggle_btn.formX .toggle1{
+    transform: rotate(-45deg) translate(-12px, 8px);
+}
+.menu_toggle_btn.formX .toggle2{
+    opacity: 0;
+}
+.menu_toggle_btn.formX .toggle3{
+    transform: rotate(45deg) translate(-10px, -6px);
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.subHeader{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0 0 0;
+    z-index: 10;
+}
+.subHeader .header_content .logo_box h1{}
+.subHeader .header_content .logo_box h1 a{}
+.subHeader .header_content .logo_box h1 a img{}
+.subHeader .header_content .headerMenu_box{}
+.subHeader .header_content .headerMenu_box .resume_btn{}
+.subHeader .header_content .headerMenu_box .resume_btn a{
+    color: #000;
+    border: 2px solid #000;
+}
+.subHeader .header_content .headerMenu_box .menu_toggle_btn{}
+.subHeader .header_content .headerMenu_box .menu_toggle_btn span{
+    background: #000;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.shortCut_btn{
+    position: fixed;
+    top: 30%;
+    right: 84px;
+    z-index: 5;
+}
+.shortCut_btn span{
+    display: block;
+    position: relative;
+    transform: rotate(270deg);
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .4s;
+    cursor: pointer;
+}
+.shortCut_btn span:nth-child(2){
+    margin: 100px 0;
+}
+.shortCut_btn span.color{
+    color: #000;
+}
+.shortCut_btn span.select::after{
+    position: absolute;
+    top: 125px;
+    left: 26px;
+    width: 30px;
+    height: 8px;
+    background-color: #000;
+    content: "";
+}
+.shortCut_btn span.lastSelect::after{
+    position: absolute;
+    top: 125px;
+    left: 26px;
+    width: 30px;
+    height: 8px;
+    background-color: #fff;
+    content: "";
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.top_btn{
+    position: fixed;
+    top: 80%;
+    right: 130px;
+    z-index: 5;
+}
+.top_btn a{}
+.top_btn a img{
+    width: 20px;
+}
+.top_btn a img#down_btn{
+    position: absolute;
+}
+.top_btn a img#top_btn{
+    position: absolute;
+    display: none;
+}
+.top_btn a img#top_btn_w{
+    position: absolute;
+    display: none;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.allMenu_section{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 7;
+}
+.allMenu_section .menu_section{
+    position: absolute;
+    width: 100%;
+    top: 300px;
+    z-index: 7;
+}
+.allMenu_section .menu_section .menuList{
+    max-width: 1100px;
+    min-width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.allMenu_section .menu_section .menuList>li{
+    float: left;
+    width: 25%;
+}
+.allMenu_section .menu_section .menuList>li span{
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFE1BD;
+    cursor: pointer;
+}
+.allMenu_section .menu_section .menuList .subMenuList{}
+.allMenu_section .menu_section .menuList .subMenuList>li{
+    margin: 50px 0;
+}
+.allMenu_section .menu_section .menuList .subMenuList>li a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFF9F2;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.container #main_content_01{}
+.container #main_content_01 .main_bg_img{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/main.01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.container #main_content_01 .main_bg_img .main_text{
+    max-width: 1100px;
+    min-width: auto;
+    margin: 0 auto;
+    padding-top: 350px;
+}
+.container #main_content_01 .main_bg_img .main_text h2{
+    position: relative;
+    color: #fff;
+    left: -40px;
+    opacity: 0;
+    font-size: 40px;
+    margin: 40px 0;
+}
+.container #main_content_01 .main_bg_img .bottom_section{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    min-width: auto;
+    z-index: 8;
+}
+.container #main_content_01 .main_bg_img .bottom_section .bottom_section_wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container #main_content_01 .main_bg_img .bottom_section .github_address{
+    float: left;
+}
+.container #main_content_01 .main_bg_img .bottom_section .github_address a{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    transition: .4s;
+}
+.container #main_content_01 .main_bg_img .bottom_section .github_address a img{
+    width: 45px;
+    margin-top: -15px;
+}
+.container #main_content_01 .main_bg_img .bottom_section .github_address a span{
+    margin-left: 15px;
+}
+.container #main_content_01 .main_bg_img .bottom_section .section_btn{
+    float: right;
+}
+.container #main_content_01 .main_bg_img .bottom_section .section_btn a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 15px;
+    transition: .4s;
+}
+.container #main_content_01 .main_bg_img .bottom_section .section_btn a:hover,
+.container #main_content_01 .main_bg_img .bottom_section .section_btn a.select{
+    text-decoration: underline;
+}
+.container #main_content_01 .main_bg_img .bottom_section .section_btn a span{}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.container #main_content_02{}
+.container #main_content_02 .aboutMe_section{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/subPage_bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_title{
+    max-width: 500px;
+    min-width: auto;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_title h2{
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_title h2::after{
+    position: absolute;
+    top: 40px;
+    left: 215px;
+    width: 70px;
+    height: 5px;
+    background-color: #000;
+    content: "";
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content{
+    max-width: 1100px;
+    width: 100%;
+    min-width: auto;
+    margin: 100px auto 0;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .text_section{
+    float: left;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .text_section .myStory p{
+    position: relative;
+    left: -100px;
+    opacity: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .text_section .myStory p span{
+    font-weight: 700;
+    color: #FF7F50;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .text_section .myStory p span:hover{
+    text-decoration: underline;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .text_section .education_btn{
+    position: relative;
+    margin-top: 50px;
+    opacity: 0;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .text_section .education_btn span{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 8px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .text_section .education_btn span:hover{
+    text-decoration: underline;
+    color: #000;
+    background-color: #fff;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .text_section .education_section{
+    position: absolute;
+    top: 25px;
+    left: -6px;
+    width: 400px;
+    height: 200px;
+    padding: 15px;
+    background-color: #fff;
+    z-index: 10;
+    opacity: 0;
+    transition: .2s;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .text_section .education_section h3{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 34px;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .text_section .info_box{
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    margin-top: 50px;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .text_section .info_box h2{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .myImg_section{
+    float: right;
+}
+.container #main_content_02 .aboutMe_section .aboutMe_content .myImg_section img{
+    width: 250px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.container #main_content_03{}
+.container #main_content_03 .skill_section{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/subPage_bg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container #main_content_03 .skill_section .skill_title{
+    max-width: 500px;
+    min-width: auto;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+.container #main_content_03 .skill_section .skill_title h2{
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.container #main_content_03 .skill_section .skill_title h2::after{
+    position: absolute;
+    top: 40px;
+    left: 225px;
+    width: 50px;
+    height: 5px;
+    background-color: #000;
+    content: "";
+}
+.skill_section .skill_content{
+    margin-top: 100px;
+}
+.skill_section .skill_content .skill_percent{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    min-width: auto;
+    height: 300px;
+    margin: 50px auto 0;
+}
+.skill_section .skill_content .skill_percent .skill_box{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 180px;
+    min-width: auto;
+    height: 300px;
+    text-align: center;
+}
+.skill_section .skill_content .skill_percent img{
+    opacity: 0;
+    position: absolute;
+    bottom: -50px;
+    width: 60px;
+}
+.skill_section .skill_content .skill_percent .skill_box .bar_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 100px;
+}
+.skill_section .skill_content .skill_percent .skill_box .skill_bar{
+    width: 30px;
+    background-color: #00b5e3;
+    color: #fff;
+}
+.skill_section .skill_content .skill_percent .skill_box .interest_bar{
+    width: 30px;
+    background-color: #f9d573;
+    color: #000;
+}
+.skill_section .skill_content .skill_percent .skill_box span{
+    margin-top: 8px;
+}
+.skill_section .skill_content .skill_percent .html_section .skill_bar{}
+.skill_section .skill_content .skill_percent .html_section .interest_bar{}
+.skill_section .skill_content .skill_percent .css_section .skill_bar{}
+.skill_section .skill_content .skill_percent .css_section .interest_bar{}
+.skill_section .skill_content .skill_percent .js_section .skill_bar{}
+.skill_section .skill_content .skill_percent .js_section .interest_bar{}
+.skill_section .skill_content .skill_percent .psd_section .skill_bar{}
+.skill_section .skill_content .skill_percent .psd_section .interest_bar{}
+.skill_section .skill_content .skill_percent .psd_section img{
+    width: 71px;
+}
+.skill_section .skill_content .skill_percent .ai_section .skill_bar{}
+.skill_section .skill_content .skill_percent .ai_section .interest_bar{}
+.skill_section .skill_content .skill_percent .ai_section img{
+    width: 70px;
+}
+.skill_section .skill_content .percent_info{
+    opacity: 0;
+    max-width: 200px;
+    min-width: auto;
+    margin: 0 auto;
+}
+.skill_section .skill_content .percent_info .info_box{
+    position: relative;
+    margin-bottom: 20px;
+}
+.skill_section .skill_content .percent_info .info_box p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.skill_section .skill_content .percent_info .info_box .color_box{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+}
+.skill_section .skill_content .percent_info .skill_info p{}
+.skill_section .skill_content .percent_info .skill_info .color_box{
+    background-color: #00b5e3;
+}
+.skill_section .skill_content .percent_info .interest_info{}
+.skill_section .skill_content .percent_info .interest_info p{}
+.skill_section .skill_content .percent_info .interest_info .color_box{
+    background-color: #f9d573;
+}
+.skill_section .skill_content .another_section{
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    max-width: 1100px;
+    min-width: auto;
+    margin: 50px auto 0;
+    text-align: center;
+}
+.skill_section .skill_content .another_section span{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    padding: 0 8px;
+}
+.skill_section .skill_content .another_section span:hover{
+    background-color: #fff;
+    color: #000;
+    text-decoration: underline;
+}
+.skill_section .skill_content .another_section .another_box{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 1100px;
+    margin-left: -550px;
+    min-width: auto;
+    background-color: #fff;
+}
+.skill_section .skill_content .another_section .another_box h3{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    text-align: center;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.container #main_content_04{}
+.container #main_content_04 .contact_section{
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+}
+.container #main_content_04 .contact_section .contact_title{
+    max-width: 500px;
+    min-width: auto;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+.container #main_content_04 .contact_section .contact_title h2{
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.container #main_content_04 .contact_section .contact_title h2::after{
+    position: absolute;
+    top: 40px;
+    left: 220px;
+    width: 70px;
+    height: 5px;
+    background-color: #fff;
+    content: "";
+}
+.container #main_content_04 .contact_section .contact_content{
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    min-width: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: #fff;
+}
+.container #main_content_04 .contact_section .contact_content .content_box{
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    float: left;
+    width: 500px;
+    height: 200px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+.contact_section .contact_content .phone{}
+.contact_section .contact_content .phone h3{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.contact_section .contact_content .phone h3 img{
+    position: absolute;
+    top: -6px;
+    left: 90px;
+    width: 20px;
+}
+.contact_section .contact_content .email{}
+.contact_section .contact_content .email h3{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.contact_section .contact_content .email h3 img{
+    position: absolute;
+    top: -1px;
+    left: 10px;
+    width: 35px;
+}
+.contact_section .contact_content .email h3 a{
+    color: #fff;
+}
+.contact_section .contact_content .endMant{
+    position: absolute;
+    top: 300px;
+    left: 0;
+}
+.contact_section .contact_content .endMant h3{
+    position: relative;
+    font-size: 30px;
+}
+.contact_section .contact_content .endMant h3::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: #fff;
+}
+.contact_section .contact_content .endMant h3.active::after{
+    display: none;
+}
+.container #main_content_04 .contact_section .map_section{
+    float: right;
+    opacity: 0;
+    width: 500px;
+    height: 450px;
+}
+.container #main_content_04 .contact_section .map_section iframe{
+    width: 500px;
+    height: 450px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.container .project_section{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left:  -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    background-color: #f0f0f0;
+}
+.container .project_section .project_title{
+    max-width: 500px;
+    min-width: auto;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+.container .project_section .project_title h2{
+    position: relative;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.container .project_section .project_title h2::after{
+    position: absolute;
+    top: 40px;
+    left: 220px;
+    width: 60px;
+    height: 5px;
+    background-color: #000;
+    content: "";
+}
+.container .project_section .project_box{
+    width: 100%;
+    height: 450px;
+    margin-top: 100px;
+    overflow: visible !important;
+}
+.container .project_section .project_box .project_wrap{}
+.container .project_section .project_box .pbBox{
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 400px !important;
+    height: 450px;
+    margin-left: 30px;
+    box-shadow: 3px 3px 8px 1px #666;
+}
+.container .project_section .project_box .pbBox .project_thumbnail{
+    width: 400px;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.container .project_section .project_box .pbBox .project_info{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+}
+.container .project_section .project_box .pbBox .project_info h3{
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.container .project_section .project_box .pbBox .project_info p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 22px;
+    padding-left: 20px;
+}
+.container .project_section .project_box .pbBox .project_info .bottom_sec{
+    position: absolute;
+    width: 360px;
+    left: 20px;
+    bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.container .project_section .project_box .pbBox .project_info .ppt_btn{
+    float: right;
+    background-color: #000;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #fff;
+}
+.container .project_section .project_box .pbBox .project_info .ppt_btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+.container .project_section .project_box .project01_box .project_thumbnail{
+    background-image: url(../img/project_thumbnail/project_OC_thumbnail.PNG);
+}
+.container .project_section .project_box .project02_box .project_thumbnail{
+    background-image: url(../img/project_thumbnail/project_PAG_thumbnail.PNG);
+}
+.project_thumbnail .work_info{
+    position: relative;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    transition: .4s;
+}
+.project_thumbnail .work_info p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 170px;
+    line-height: 24px;
+    text-align: center;
+}
+.project_box .review_box{
+    position: relative;
+    background-color: #000;
+    color: #fff;
+}
+.project_box .review_box .review_txt_box{}
+.project_box .review_box .review_txt_box .review_title{
+    width: 100%;
+    margin: 40px 0 20px;
+    text-align: center;
+}
+.project_box .review_box .review_txt_box .review_title h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+.project_box .review_box .review_txt_box .review_txt{
+    width: 365px;
+    height: 310px;
+    padding: 20px 0 20px 30px;
+    overflow-y: scroll;
+}
+.review_txt::-webkit-scrollbar{
+    width: 15px;
+}
+.review_txt::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 8px;
+}
+.review_txt::-webkit-scrollbar-track{
+    background-color: #000;
+}
+.project_box .review_box .review_txt_box .review_txt p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}

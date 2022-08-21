@@ -1,0 +1,231 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+*{margin: 0; padding: 0; text-decoration: none; list-style: none;}
+a{text-decoration: none; color: black;}
+
+body{overflow-x: hidden}
+div#exhibitionTop{
+    height: 315px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+    background: url(../top/exhibition.jpg) center no-repeat;
+}
+div#exhibitionTop>p.exhibition{
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 50pt;
+    font-weight: bolder;
+}
+div#exhibitionTop>p.exhibitionKo{
+    width: 100%;
+    text-align: center;
+    font-size: 30pt;
+}
+
+/* ---------------------------------------------- */
+
+div#exhibitionMenu{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100px;
+    border-bottom: 1px solid #999;
+    font-size: 18pt;
+    font-family: 'Noto Sans KR';
+}
+div#exhibitionMenu p{
+    float: left;
+    margin-top: 50px;
+    width: 250px;
+    width: 13.02083333333333%;
+    text-align: center;
+    cursor: pointer;
+}
+div#exhibitionMenu p.now{
+    margin-left: 450px;
+    margin-left: 23.4375%;
+}
+div#exhibitionMenu p.soon{
+    color: #777;
+}
+div#exhibitionMenu p.last{
+    color: #777;
+}
+div#exhibitionMenu p.borrow{
+    color: #777;
+}
+
+
+/* ---------------------------------------------- */
+
+
+div#exhibitionPoster{
+    margin-top: 150px;
+    height: 850px;
+    /* background-color: #bee4e5; */
+    background: url(../전시/현재전시.jpg) center center no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+/* div#exhibitionPoster{
+    width: 100%;
+    max-width: 1920px;
+} */
+/* div#exhibitionPoster img{
+    margin-top: 70px;
+    height: 710px;
+    width: auto;
+}
+div#exhibitionPoster img.poster1{
+    margin-left: -400px;
+    margin-left: -20.83333333333333%;
+    opacity: 60%;
+}
+div#exhibitionPoster img.poster2{
+    margin-left: 350px;
+    margin-left: 18.22916666666667%;
+}
+div#exhibitionPoster img.poster3{
+    position: absolute;
+    margin-left: 300px;
+    margin-left: 15.625%;
+    opacity: 60%;
+} */
+
+
+/* ---------------------------------------------- */
+
+
+div#exTitle{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1100px;
+    height: 380px;
+    font-family: 'Noto Sans KR';
+}
+div#exTitle p.bigTitle{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 60pt;
+    font-weight: bolder;
+    text-align: center;
+}
+div#exTitle p.title{
+    width: 100%;
+    font-size: 30pt;
+    text-align: center;
+}
+
+
+/* ---------------------------------------------- */
+
+
+div#ex{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR';
+}
+div#ex div.ex1{
+    position: relative;
+    width: 100%;
+}
+div#ex div.ex1 img.exImg1{
+    width: 605px;
+    padding: 0;
+}
+div#ex div.ex1 img.exImg2{
+    margin-left: 30px;
+    padding: 0;
+    width: 455px;
+}
+div#ex div.ex1 p.exText1{
+    width: 100%;
+    margin-top: 25px;
+    font-size: 20pt;
+    text-align: center;
+}
+div#ex div.ex1 p.exText2{
+    width: 100%;
+    margin-top: 100px;
+    font-size: 20pt;
+    text-align: center;
+}
+div#ex div.ex2{
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+}
+div#ex div.ex2 img.exImg3{
+    margin-top: 50px;
+    width: 590px;
+    margin-left: 480px;
+}
+div#ex div.ex2 img.exImg4{
+    margin-top: -150px;
+    margin-top: -14%;
+    width: 460px;
+}
+div#ex div.ex2 img.exImg5{
+    margin-top: -420px;
+    margin-top: -40%;
+    margin-left: 710px;
+    width: 355px;
+}
+div#ex div.ex2 p.exText3{
+    width: 1100px;
+    font-size: 20pt;
+    text-align: center;
+}
+
+
+/* ---------------------------------------------- */
+
+
+div#exBottom{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 250px;
+    border: 1px solid #999;
+    font-family: 'Noto Sans KR';
+    font-size: 18pt;
+}
+div#exBottom p.when{
+    width: 700px;
+    width: 63.63636363636364%;
+    padding-bottom: 30px;
+    margin-left: 200px;
+    margin-top: 30px;
+    text-align: center;
+    border-bottom: 1px solid #999;
+}
+div#exBottom p.where{
+    width: 700px;
+    width: 63.63636363636364%;
+    margin-top: 30px;
+    margin-left: 200px;
+    text-align: center;
+}
+div#exBottom input{
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 500px;
+    margin-left: 45.45454545454545%;
+    height: 40px;
+    font-size: 14pt;
+    color: #fff;
+    border: none;
+    background-color: #f79775;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 100px;
+}

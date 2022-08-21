@@ -1,0 +1,145 @@
+@charset "utf-8";
+@media all and (max-width: 1100px){
+    /* 기본 */
+    .wBox{
+        width: 100% !important;
+    }
+    #wrap{}
+    /* mainbanner */
+    #mainbanner ul.banner_list,
+    #mainbanner .banner_list li a{
+        height: 500px !important;
+    }
+    #mainbanner .banner_list #bannerText{
+        padding-left: 5%;
+        top: 120px;
+    }
+    /* exhibition */
+    #exhibition .wBox #artPoster{
+        width: 100%;
+        height: 400px;
+    }
+    #exhibition .wBox #artPoster .poster{
+        float: left;
+        width: 25%;
+    }
+    #exhibition .wBox #artPoster .poster a{
+        display: block;
+        width: auto;
+        float: none;
+        height: auto;
+    }
+    #exhibition .wBox #artPoster .poster img{
+        width: 100%;
+        height: auto;
+    }
+    #exhibition li div#posterText{
+        display: none !important;
+    }
+    /* artist */
+    #artist{
+        height: 1500px !important;
+    }
+    #artist .wBox{
+        width: 95% !important;
+    }
+    #artist div#bg02{
+        width: 5% !important;
+        height: 1500px !important;
+    }
+    #artist div#bg03{
+        right: 2.5% !important;
+        width: 48% !important;
+    }
+    #artist #artistInfo .artistBox{
+        width: 47.5%;
+    }
+    #artist #artistInfo .artistBox a{
+        width: 100%;
+    }
+    #artist #artistInfo .artistBox div#more{
+        width: 100%;
+    }
+    #artist #artistInfo .artistBox .infoBox p{
+        display: none;
+    }
+    /* event */
+    #event a{
+        height: 200px;
+    }
+    #event a .banner{
+        min-width: 800px;
+        height: 200px !important;
+        background-size: 160% !important;
+    }
+    /* rental */
+    #rental{
+        margin-top: 120px !important;
+    }
+}
+@media all and (max-width: 700px){
+    /* 기본 */
+    /* mainbanner */
+    #mainbanner ul.banner_list,
+    #mainbanner .banner_list li a{
+        height: 700px !important;
+    }
+    #mainbanner .banner_list #bannerText{
+        top: 200px;
+    }
+    /* exhibition */
+    #exhibition .wBox h2{
+        margin-top: 100px;
+    }
+    #exhibition .wBox #artPoster{
+        height: 750px !important;
+    }    
+    #exhibition .wBox #artPoster .poster{
+        margin-left: .5%;
+        margin-right: .5%;
+        width: 49%;
+    }
+    #exhibition .wBox #artPoster .poster a{
+    }
+    /* artist */
+    #artist #bg01{
+        display: none;
+    }
+    #artist #bg02{
+        display: none;
+    }
+    #artist #bg03{
+        display: none;
+    }
+    #artist #artistInfo .artistBox{
+        width: 100%;
+        margin-top: 0;
+        float: none;
+    }
+    #artist{
+        height: 2350px !important;
+        margin-top: 0 !important;
+    }
+    /* event */
+    #event{
+        margin-top: 50px !important;
+    }
+    #event a{
+        height: auto !important;
+    }
+    #event a .banner{
+        min-width: 400px;
+        height: 150px !important;
+        background-size: 165% !important;
+    }
+    /* rental */
+    #rental{
+        margin-top: 100px !important;
+        overflow: hidden;
+    }
+    #rental img{
+        position: relative;
+        left: -9.285714285714286%;
+        width: 150% !important;
+    }
+}

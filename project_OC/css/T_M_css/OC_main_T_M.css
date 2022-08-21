@@ -1,0 +1,161 @@
+@charset "utf-8";
+@media all and (max-width:1024px){
+    /* mainbanner */
+    #mainbanner #banners{
+        min-width: 768px;
+        height: auto;
+    }
+    #mainbanner #banners ul{
+        height: 360px;
+    }
+    #mainbanner #banners ul li{
+        height: 360px;
+    }
+    #mainbanner #banners .bannerImg{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    #mainbanner #slideBtnBox{
+        left: 45%;
+    }
+    /* notification */
+    #notification a h2{
+        margin-left: 5%;
+    }
+    #notification #noti{
+        margin-left: 5%;
+    }
+    /* diet */
+    #diet h2{
+        margin-left: 5%;
+        display: inline-block;
+    }
+    #diet #dietList{
+        width: 900px;
+        height: 352px;
+        margin: 0 auto 135px;
+    }
+    #diet #dietList #dietUl li{
+        width: 400px;
+    }
+    #diet #dietList #dietUl li a .imgBox img{
+        width: 100%;
+    }
+    #diet .slideBtn img{
+        top: 320px !important;
+    }
+    #diet .slideBtn #left{
+        left: 1% !important;
+    }
+    #diet .slideBtn #right{
+        right: 1% !important;
+    }
+    /* cardBanner */
+    #cardBanner{
+        overflow: hidden;
+        text-align: center;
+        margin: 0 auto;
+        height: 190px !important;
+    }
+    #cardBanner a{
+        display: block;
+        min-width: 1300px;
+    }
+    #cardBanner img{
+        position: relative;
+        left: -10%;
+    }
+    /* brand */
+    #brand{
+        height: 450px !important;
+    }
+    #brand #brandList{
+        width: 950px;
+        margin: 0 auto;
+    }
+    #brand a.brandBox{
+        width: 18.18181818181818%;
+        margin-left: 2.272727272727273%;
+    }
+    #brand a.brandBox .imgBox{
+        width: 100%;
+    }
+    #brand a.brandBox .imgBox img{
+        width: 100%;
+    }
+    #brand a.brandBox p{        
+        display: block;
+        font-size: 18px;
+    }
+    /* review */
+    #review h2{
+        margin-left: 5%;
+    }
+    #review #reviewArea{
+        float: none;
+    }
+    #review #reviewArea #reviewList{
+        margin: 0 auto;
+        width: 800px;
+        height: 350px;
+    }
+    #review #reviewArea #reviewList #reviewimg .reviewNextImg{
+        display: none;
+    }
+    /* product */
+    #product .wBox{
+        width: 90%;
+    }
+    #product #mainProduct .mainProductBox{
+        width: 47%;
+    }
+    #product #mainProduct .mainProductBox img{
+        width: 100%;
+    }
+    #product #subProduct{
+    }
+    #product #subProduct .productBox{
+        width: 31.494%;
+        padding-right: 2.272727272727273%;
+    }
+    #product #subProduct #product05,
+    #product #subProduct #product08{
+        padding-right: 0;
+    }
+    #product #subProduct .productBox img{
+        width: 100%;
+    }
+    /* eventBanner */
+    #eventBanner{
+        overflow: hidden;
+        text-align: center;
+        margin: 200px auto 150px;
+        height: 270px !important;
+    }
+    #eventBanner a{
+        display: block;
+        min-width: 1300px;
+    }
+    #eventBanner img{
+        position: relative;
+        left: -10%;
+    }
+    /* suggest */
+    #suggest .wBox{
+        width: 90%;
+    }
+    #suggest #product .sugProduct{
+        width: 31.494%;
+        margin-left: 2.272727272727273%;
+    }
+    #suggest #product .sugProduct:first-child{
+        margin-left: 0;
+    }
+    #suggest #product .sugProduct img{
+        width: 100%;
+    }
+}
+@media all and (max-width:768px){
+    
+}
